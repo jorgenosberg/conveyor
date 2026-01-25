@@ -3,7 +3,7 @@
     {
       "className": "Desc_AluminumIngot_C",
       "name": "Aluminum Ingot",
-      "description": "Smelted from Aluminum Scrap, which is refined from Alumina Solution.\u003Cbr\u003EUsed to produce specialized aluminum-based parts.",
+      "description": "Smelted from Aluminum Scrap, which is refined from Alumina Solution.<br>Used to produce specialized aluminum-based parts.",
       "unlockedBy": "[[Tier 7]] - Bauxite Refinement",
       "stackSize": 100,
       "energy": 0,
@@ -15,7 +15,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Aluminum_Ingot.webp"
     }
   ],
   "Desc_HazmatFilter_C": [
@@ -34,14 +35,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Iodine-Infused_Filter.webp"
     }
   ],
   "Desc_IronPlate_C": [
     {
       "className": "Desc_IronPlate_C",
       "name": "Iron Plate",
-      "description": "Used for crafting.\u003Cbr\u003EOne of the most basic parts.",
+      "description": "Used for crafting.<br>One of the most basic parts.",
       "unlockedBy": "Onboarding",
       "stackSize": 200,
       "energy": 0,
@@ -53,14 +55,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Iron_Plate.webp"
     }
   ],
   "Desc_IronRod_C": [
     {
       "className": "Desc_IronRod_C",
       "name": "Iron Rod",
-      "description": "Used for crafting.\u003Cbr\u003EOne of the most basic parts.",
+      "description": "Used for crafting.<br>One of the most basic parts.",
       "unlockedBy": "Onboarding",
       "stackSize": 200,
       "energy": 0,
@@ -72,7 +75,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Iron_Rod.webp"
     }
   ],
   "Desc_IronIngot_C": [
@@ -91,14 +95,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Iron_Ingot.webp"
     }
   ],
   "Desc_Cable_C": [
     {
       "className": "Desc_Cable_C",
       "name": "Cable",
-      "description": "Used for crafting.\u003Cbr\u003EPrimarily used to build Power Lines.",
+      "description": "Used for crafting.<br>Primarily used to build Power Lines.",
       "unlockedBy": "[[Tier 0]] - HUB Upgrade 2",
       "stackSize": 200,
       "energy": 0,
@@ -110,14 +115,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Cable.webp"
     }
   ],
   "Desc_IronPlateReinforced_C": [
     {
       "className": "Desc_IronPlateReinforced_C",
       "name": "Reinforced Iron Plate",
-      "description": "Used for crafting.\u003Cbr\u003EA sturdier and more durable Iron Plate.",
+      "description": "Used for crafting.<br>A sturdier and more durable Iron Plate.",
       "unlockedBy": "[[Tier 0]] - HUB Upgrade 3",
       "stackSize": 100,
       "energy": 0,
@@ -129,14 +135,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Reinforced_Iron_Plate.webp"
     }
   ],
   "Desc_Wire_C": [
     {
       "className": "Desc_Wire_C",
       "name": "Wire",
-      "description": "Used for crafting.\u003Cbr\u003EOne of the most basic parts.",
+      "description": "Used for crafting.<br>One of the most basic parts.",
       "unlockedBy": "[[Tier 0]] - HUB Upgrade 2",
       "stackSize": 500,
       "energy": 0,
@@ -148,14 +155,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Wire.webp"
     }
   ],
   "Desc_Cement_C": [
     {
       "className": "Desc_Cement_C",
       "name": "Concrete",
-      "description": "Used for building.\u003Cbr\u003EGood for stable Foundations.",
+      "description": "Used for building.<br>Good for stable Foundations.",
       "unlockedBy": "[[Tier 0]] - HUB Upgrade 3",
       "stackSize": 500,
       "energy": 0,
@@ -167,14 +175,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Concrete.webp"
     }
   ],
   "Desc_Rotor_C": [
     {
       "className": "Desc_Rotor_C",
       "name": "Rotor",
-      "description": "Used for crafting.\u003Cbr\u003EThe moving parts of a motor.",
+      "description": "Used for crafting.<br>The moving parts of a motor.",
       "unlockedBy": "[[Tier 2]] - Part Assembly",
       "stackSize": 100,
       "energy": 0,
@@ -186,7 +195,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Rotor.webp"
     }
   ],
   "Desc_CompactedCoal_C": [
@@ -194,7 +204,7 @@
       "className": "Desc_CompactedCoal_C",
       "name": "Compacted Coal",
       "description": "A much more efficient alternative to Coal. Used as fuel for vehicles and Coal-Powered Generators.",
-      "unlockedBy": "[[Sulfur Research|MAM Sulfur Research]] - Compacted Coal OR\u003Cbr\u003E[[Sulfur Research|MAM Sulfur Research]] - Ionized Fuel OR\u003Cbr\u003E[[Sulfur Research|MAM Sulfur Research]] - Rocket Fuel",
+      "unlockedBy": "[[Sulfur Research|MAM Sulfur Research]] - Compacted Coal OR<br>[[Sulfur Research|MAM Sulfur Research]] - Ionized Fuel OR<br>[[Sulfur Research|MAM Sulfur Research]] - Rocket Fuel",
       "stackSize": 100,
       "energy": 630,
       "radioactive": 0,
@@ -205,7 +215,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Compacted_Coal.webp"
     }
   ],
   "Desc_LiquidFuel_C": [
@@ -213,7 +224,7 @@
       "className": "Desc_LiquidFuel_C",
       "name": "Fuel",
       "description": "Can be used as-is to generate power, or packaged to be used as fuel for vehicles or the Jetpack.",
-      "unlockedBy": "[[Tier 5]] - Oil Processing OR\u003Cbr\u003E[[Tier 5]] - Fluid Packaging",
+      "unlockedBy": "[[Tier 5]] - Oil Processing OR<br>[[Tier 5]] - Fluid Packaging",
       "stackSize": 50000,
       "energy": 750,
       "radioactive": 0,
@@ -224,14 +235,15 @@
       "fluidColor": "#eb7d15",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Fuel.webp"
     }
   ],
   "Desc_RocketFuel_C": [
     {
       "className": "Desc_RocketFuel_C",
       "name": "Rocket Fuel",
-      "description": "A high-impulse compressed gas fuel.\u003Cbr\u003ECan be used as-is to power Fuel-Powered Generators, or packaged to be used as fuel for vehicles or the Jetpack.",
+      "description": "A high-impulse compressed gas fuel.<br>Can be used as-is to power Fuel-Powered Generators, or packaged to be used as fuel for vehicles or the Jetpack.",
       "unlockedBy": "[[Sulfur Research|MAM Sulfur Research]] - Rocket Fuel",
       "stackSize": 50000,
       "energy": 3600,
@@ -243,14 +255,15 @@
       "fluidColor": "#bd251a",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Rocket_Fuel.webp"
     }
   ],
   "Desc_CopperSheet_C": [
     {
       "className": "Desc_CopperSheet_C",
       "name": "Copper Sheet",
-      "description": "Used for crafting.\u003Cbr\u003EPrimarily used for Pipelines due to its high corrosion resistance.",
+      "description": "Used for crafting.<br>Primarily used for Pipelines due to its high corrosion resistance.",
       "unlockedBy": "[[Tier 2]] - Part Assembly",
       "stackSize": 200,
       "energy": 0,
@@ -262,14 +275,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Copper_Sheet.webp"
     }
   ],
   "Desc_ModularFrame_C": [
     {
       "className": "Desc_ModularFrame_C",
       "name": "Modular Frame",
-      "description": "Used for crafting.\u003Cbr\u003EA multipurpose building block.",
+      "description": "Used for crafting.<br>A multipurpose building block.",
       "unlockedBy": "[[Tier 2]] - Part Assembly",
       "stackSize": 50,
       "energy": 0,
@@ -281,14 +295,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Modular_Frame.webp"
     }
   ],
   "Desc_IronScrew_C": [
     {
       "className": "Desc_IronScrew_C",
       "name": "Screws",
-      "description": "Used for crafting.\u003Cbr\u003EOne of the most basic parts.",
+      "description": "Used for crafting.<br>One of the most basic parts.",
       "unlockedBy": "[[Tier 0]] - HUB Upgrade 3",
       "stackSize": 500,
       "energy": 0,
@@ -300,7 +315,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Screws.webp"
     }
   ],
   "Desc_NitricAcid_C": [
@@ -319,7 +335,8 @@
       "fluidColor": "#d9d9a2",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Nitric_Acid.webp"
     }
   ],
   "Desc_LiquidTurboFuel_C": [
@@ -338,7 +355,8 @@
       "fluidColor": "#d4292e",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Turbofuel.webp"
     }
   ],
   "Desc_GasTank_C": [
@@ -346,7 +364,7 @@
       "className": "Desc_GasTank_C",
       "name": "Empty Fluid Tank",
       "description": "Used to package gases and volatile liquids for transportation.",
-      "unlockedBy": "[[Sulfur Research|MAM Sulfur Research]] - Ionized Fuel OR\u003Cbr\u003E[[Sulfur Research|MAM Sulfur Research]] - Rocket Fuel OR\u003Cbr\u003E[[Tier 8]] - Advanced Aluminum Production OR\u003Cbr\u003E[[Tier 8]] - Particle Enrichment",
+      "unlockedBy": "[[Sulfur Research|MAM Sulfur Research]] - Ionized Fuel OR<br>[[Sulfur Research|MAM Sulfur Research]] - Rocket Fuel OR<br>[[Tier 8]] - Advanced Aluminum Production OR<br>[[Tier 8]] - Particle Enrichment",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -357,7 +375,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Empty_Fluid_Tank.webp"
     }
   ],
   "Desc_PackagedRocketFuel_C": [
@@ -376,7 +395,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Rocket_Fuel.webp"
     }
   ],
   "Desc_CrystalOscillator_C": [
@@ -384,7 +404,7 @@
       "className": "Desc_CrystalOscillator_C",
       "name": "Crystal Oscillator",
       "description": "An electronic oscillator circuit that uses the mechanical resonance of a vibrating crystal to create an electrical signal with a precise frequency.",
-      "unlockedBy": "[[Quartz Research|MAM Quartz Research]] - Crystal Oscillator OR\u003Cbr\u003E[[Tier 7]] - Bauxite Refinement",
+      "unlockedBy": "[[Quartz Research|MAM Quartz Research]] - Crystal Oscillator OR<br>[[Tier 7]] - Bauxite Refinement",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -395,7 +415,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Crystal_Oscillator.webp"
     }
   ],
   "Desc_Motor_C": [
@@ -414,7 +435,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Motor.webp"
     }
   ],
   "Desc_TurboFuel_C": [
@@ -433,14 +455,15 @@
       "fluidColor": "#d4292e",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Turbofuel.webp"
     }
   ],
   "Desc_DarkMatter_C": [
     {
       "className": "Desc_DarkMatter_C",
       "name": "Dark Matter Crystal",
-      "description": "Concentrated Dark Matter Residue that is isolated within a crystalline vessel. This form of containment allows for utilising Dark Matter reliably in other production processes.\u003Cbr\u003EPower Usage: 500-1500 MW (1000 MW average).",
+      "description": "Concentrated Dark Matter Residue that is isolated within a crystalline vessel. This form of containment allows for utilising Dark Matter reliably in other production processes.<br>Power Usage: 500-1500 MW (1000 MW average).",
       "unlockedBy": "[[Tier 9]] - Quantum Encoding",
       "stackSize": 200,
       "energy": 0,
@@ -452,14 +475,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Dark_Matter_Crystal.webp"
     }
   ],
   "Desc_IonizedFuel_C": [
     {
       "className": "Desc_IonizedFuel_C",
       "name": "Ionized Fuel",
-      "description": "Fuel that has been ionized, allowing it to deliver incredible output.\u003Cbr\u003ECan be used as-is to power Fuel-Powered Generators, or packaged to be used as fuel for vehicles or the Jetpack.",
+      "description": "Fuel that has been ionized, allowing it to deliver incredible output.<br>Can be used as-is to power Fuel-Powered Generators, or packaged to be used as fuel for vehicles or the Jetpack.",
       "unlockedBy": "[[Sulfur Research|MAM Sulfur Research]] - Ionized Fuel",
       "stackSize": 50000,
       "energy": 5000,
@@ -471,7 +495,8 @@
       "fluidColor": "#d55f1a",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Ionized_Fuel.webp"
     }
   ],
   "Desc_ComputerSuper_C": [
@@ -490,7 +515,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Supercomputer.webp"
     }
   ],
   "Desc_CoolingSystem_C": [
@@ -509,7 +535,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Cooling_System.webp"
     }
   ],
   "Desc_FicsiteMesh_C": [
@@ -528,7 +555,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Ficsite_Trigon.webp"
     }
   ],
   "Desc_MotorLightweight_C": [
@@ -547,7 +575,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Turbo_Motor.webp"
     }
   ],
   "Desc_TimeCrystal_C": [
@@ -566,15 +595,16 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Time_Crystal.webp"
     }
   ],
   "Desc_DarkEnergy_C": [
     {
       "className": "Desc_DarkEnergy_C",
       "name": "Dark Matter Residue",
-      "description": "Produced as a by-product of Quantum Encoding processes and alternatively generated in the Converter.\u003Cbr\u003EVarious fields of science are still debating the nature and properties of Dark Matter. Meanwhile, FICSIT has found several applications for it in space-time manipulation.",
-      "unlockedBy": "[[Alien Technology Research|MAM Alien Technology Research]] - Alien Power Matrix OR\u003Cbr\u003E[[Power Slugs Research|MAM Power Slugs Research]] - Synthetic Power Shards OR\u003Cbr\u003E[[Tier 9]] - Quantum Encoding OR\u003Cbr\u003E[[Tier 9]] - Peak Efficiency",
+      "description": "Produced as a by-product of Quantum Encoding processes and alternatively generated in the Converter.<br>Various fields of science are still debating the nature and properties of Dark Matter. Meanwhile, FICSIT has found several applications for it in space-time manipulation.",
+      "unlockedBy": "[[Alien Technology Research|MAM Alien Technology Research]] - Alien Power Matrix OR<br>[[Power Slugs Research|MAM Power Slugs Research]] - Synthetic Power Shards OR<br>[[Tier 9]] - Quantum Encoding OR<br>[[Tier 9]] - Peak Efficiency",
       "stackSize": 50000,
       "energy": 0,
       "radioactive": 0,
@@ -585,15 +615,16 @@
       "fluidColor": "#fdaff9",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Dark_Matter_Residue.webp"
     }
   ],
   "Desc_SAMIngot_C": [
     {
       "className": "Desc_SAMIngot_C",
       "name": "Reanimated SAM",
-      "description": "The active and contained form of the Strange Alien Matter.\u003Cbr\u003EProper electromagnetic containment is required, as it appears to be able to manipulate the atomic bonds of any matter it comes into contact with.",
-      "unlockedBy": "[[Alien Technology Research|MAM Alien Technology Research]] - SAM Reanimation OR\u003Cbr\u003E[[Tier 9]] - Matter Conversion",
+      "description": "The active and contained form of the Strange Alien Matter.<br>Proper electromagnetic containment is required, as it appears to be able to manipulate the atomic bonds of any matter it comes into contact with.",
+      "unlockedBy": "[[Alien Technology Research|MAM Alien Technology Research]] - SAM Reanimation OR<br>[[Tier 9]] - Matter Conversion",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -604,14 +635,15 @@
       "fluidColor": "#ffffff",
       "alienItem": true,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Reanimated_SAM.webp"
     }
   ],
   "Desc_QuantumEnergy_C": [
     {
       "className": "Desc_QuantumEnergy_C",
       "name": "Excited Photonic Matter",
-      "description": "Excited Photonic Matter is essential for all production processes in the Quantum Encoder.\u003Cbr\u003EFormed in the Converter by inducing intense photon interactions through exposure to SAM in a high-energy environment.",
+      "description": "Excited Photonic Matter is essential for all production processes in the Quantum Encoder.<br>Formed in the Converter by inducing intense photon interactions through exposure to SAM in a high-energy environment.",
       "unlockedBy": "[[Tier 9]] - Quantum Encoding",
       "stackSize": 50000,
       "energy": 0,
@@ -623,14 +655,15 @@
       "fluidColor": "#76f5e8",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Excited_Photonic_Matter.webp"
     }
   ],
   "Desc_Diamond_C": [
     {
       "className": "Desc_Diamond_C",
       "name": "Diamonds",
-      "description": "Synthetic Diamonds produced by exposing Coal to extreme heat and pressure.\u003Cbr\u003EUsed in the production of Time Crystals and Dark Matter Crystals.\u003Cbr\u003EPower Usage: 250-750 MW (500 MW average).",
+      "description": "Synthetic Diamonds produced by exposing Coal to extreme heat and pressure.<br>Used in the production of Time Crystals and Dark Matter Crystals.<br>Power Usage: 250-750 MW (500 MW average).",
       "unlockedBy": "[[Tier 9]] - Matter Conversion",
       "stackSize": 200,
       "energy": 0,
@@ -642,7 +675,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Diamonds.webp"
     }
   ],
   "Desc_AluminumPlate_C": [
@@ -661,7 +695,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Alclad_Aluminum_Sheet.webp"
     }
   ],
   "Desc_QuantumOscillator_C": [
@@ -680,7 +715,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Superposition_Oscillator.webp"
     }
   ],
   "Desc_TemporalProcessor_C": [
@@ -699,14 +735,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Neural-Quantum_Processor.webp"
     }
   ],
   "Desc_SpaceElevatorPart_12_C": [
     {
       "className": "Desc_SpaceElevatorPart_12_C",
       "name": "AI Expansion Server",
-      "description": "Project Part #12. Ship via the Space Elevator to complete phases of Project Assembly.\u003Cbr\u003EPower Usage: 0-2000 MW (1000 MW average).\u003Cbr\u003EGrowth is the metric by which we measure success.",
+      "description": "Project Part #12. Ship via the Space Elevator to complete phases of Project Assembly.<br>Power Usage: 0-2000 MW (1000 MW average).<br>Growth is the metric by which we measure success.",
       "unlockedBy": "[[Tier 9]] - Quantum Encoding",
       "stackSize": 50,
       "energy": 0,
@@ -718,14 +755,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/AI_Expansion_Server.webp"
     }
   ],
   "Desc_SpaceElevatorPart_6_C": [
     {
       "className": "Desc_SpaceElevatorPart_6_C",
       "name": "Magnetic Field Generator",
-      "description": "Project Part #7. Ship via the Space Elevator to complete phases of Project Assembly.\u003Cbr\u003EThese modular generators use superconducting magnets and vast amounts of electricity to produce a powerful and easily expandable magnetic field.",
+      "description": "Project Part #7. Ship via the Space Elevator to complete phases of Project Assembly.<br>These modular generators use superconducting magnets and vast amounts of electricity to produce a powerful and easily expandable magnetic field.",
       "unlockedBy": "[[Tier 8]] - Nuclear Power",
       "stackSize": 50,
       "energy": 0,
@@ -737,7 +775,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Magnetic_Field_Generator.webp"
     }
   ],
   "Desc_PackagedIonizedFuel_C": [
@@ -756,15 +795,16 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Ionized_Fuel.webp"
     }
   ],
   "Desc_SAMFluctuator_C": [
     {
       "className": "Desc_SAMFluctuator_C",
       "name": "SAM Fluctuator",
-      "description": "The SAM Fluctuator is able to regulate and direct the behavior of Reanimated SAM through the application of electric charges with varying frequencies.\u003Cbr\u003EThis control facilitates technologies such as matter-to-energy conversion and spatiotemporal matter manipulation.",
-      "unlockedBy": "[[Alien Technology Research|MAM Alien Technology Research]] - SAM Fluctuator OR\u003Cbr\u003E[[Tier 9]] - Matter Conversion",
+      "description": "The SAM Fluctuator is able to regulate and direct the behavior of Reanimated SAM through the application of electric charges with varying frequencies.<br>This control facilitates technologies such as matter-to-energy conversion and spatiotemporal matter manipulation.",
+      "unlockedBy": "[[Alien Technology Research|MAM Alien Technology Research]] - SAM Fluctuator OR<br>[[Tier 9]] - Matter Conversion",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -775,7 +815,8 @@
       "fluidColor": "#ffffff",
       "alienItem": true,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/SAM_Fluctuator.webp"
     }
   ],
   "Desc_SteelPipe_C": [
@@ -794,7 +835,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Steel_Pipe.webp"
     }
   ],
   "Desc_ModularFrameFused_C": [
@@ -813,7 +855,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Fused_Modular_Frame.webp"
     }
   ],
   "Desc_ModularFrameLightweight_C": [
@@ -832,14 +875,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Radio_Control_Unit.webp"
     }
   ],
   "Desc_FicsiteIngot_C": [
     {
       "className": "Desc_FicsiteIngot_C",
       "name": "Ficsite Ingot",
-      "description": "Produced by reconstructing other metals on a molecular level using Strange Alien Matter.\u003Cbr\u003ESynthesized by FICSIT to be the perfect construction material, and used in the most high-end processes.",
+      "description": "Produced by reconstructing other metals on a molecular level using Strange Alien Matter.<br>Synthesized by FICSIT to be the perfect construction material, and used in the most high-end processes.",
       "unlockedBy": "[[Tier 9]] - Matter Conversion",
       "stackSize": 100,
       "energy": 0,
@@ -851,14 +895,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Ficsite_Ingot.webp"
     }
   ],
   "Desc_SpaceElevatorPart_10_C": [
     {
       "className": "Desc_SpaceElevatorPart_10_C",
       "name": "Biochemical Sculptor",
-      "description": "Project Part #10. Ship via the Space Elevator to complete phases of Project Assembly.\u003Cbr\u003EYears ahead of the competition, this top-of-the-line 3D printer is used for the production of synthetic biological resources.",
+      "description": "Project Part #10. Ship via the Space Elevator to complete phases of Project Assembly.<br>Years ahead of the competition, this top-of-the-line 3D printer is used for the production of synthetic biological resources.",
       "unlockedBy": "[[Tier 9]] - Matter Conversion",
       "stackSize": 50,
       "energy": 0,
@@ -870,14 +915,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Biochemical_Sculptor.webp"
     }
   ],
   "Desc_SpaceElevatorPart_7_C": [
     {
       "className": "Desc_SpaceElevatorPart_7_C",
       "name": "Assembly Director System",
-      "description": "Project Part #6. Ship via the Space Elevator to complete phases of Project Assembly.\u003Cbr\u003EThis extremely fast and precise computing system is specifically designed to direct the Project Assembly: Assembly Phase.",
+      "description": "Project Part #6. Ship via the Space Elevator to complete phases of Project Assembly.<br>This extremely fast and precise computing system is specifically designed to direct the Project Assembly: Assembly Phase.",
       "unlockedBy": "[[Tier 7]] - Control System Development",
       "stackSize": 50,
       "energy": 0,
@@ -889,7 +935,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Assembly_Director_System.webp"
     }
   ],
   "Desc_GoldIngot_C": [
@@ -897,7 +944,7 @@
       "className": "Desc_GoldIngot_C",
       "name": "Caterium Ingot",
       "description": "Smelted from Caterium Ore. Primarily used for advanced electronics.",
-      "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - Caterium Ingots OR\u003Cbr\u003E[[Tier 5]] - Petroleum Power",
+      "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - Caterium Ingots OR<br>[[Tier 5]] - Petroleum Power",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -908,7 +955,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Caterium_Ingot.webp"
     }
   ],
   "Desc_FluidCanister_C": [
@@ -916,7 +964,7 @@
       "className": "Desc_FluidCanister_C",
       "name": "Empty Canister",
       "description": "Used to package fluids for transportation.",
-      "unlockedBy": "[[Tier 5]] - Fluid Packaging OR\u003Cbr\u003E[[Tier 7]] - Bauxite Refinement OR\u003Cbr\u003E[[Tier 7]] - Control System Development OR\u003Cbr\u003E[[Sulfur Research|MAM Sulfur Research]] - Turbofuel",
+      "unlockedBy": "[[Tier 5]] - Fluid Packaging OR<br>[[Tier 7]] - Bauxite Refinement OR<br>[[Tier 7]] - Control System Development OR<br>[[Sulfur Research|MAM Sulfur Research]] - Turbofuel",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -927,7 +975,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Empty_Canister.webp"
     }
   ],
   "Desc_Fuel_C": [
@@ -946,7 +995,8 @@
       "fluidColor": "#eb7d15",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Fuel.webp"
     }
   ],
   "Desc_CircuitBoard_C": [
@@ -965,7 +1015,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Circuit_Board.webp"
     }
   ],
   "Desc_Plastic_C": [
@@ -984,14 +1035,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Plastic.webp"
     }
   ],
   "Desc_SteelPlateReinforced_C": [
     {
       "className": "Desc_SteelPlateReinforced_C",
       "name": "Encased Industrial Beam",
-      "description": "Simultaneously utilizes the compressive strength of concrete and the tensile strength of steel.\u003Cbr\u003EMostly used as a stable base for constructing buildings.",
+      "description": "Simultaneously utilizes the compressive strength of concrete and the tensile strength of steel.<br>Mostly used as a stable base for constructing buildings.",
       "unlockedBy": "[[Tier 4]] - Advanced Steel Production",
       "stackSize": 100,
       "energy": 0,
@@ -1003,7 +1055,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Encased_Industrial_Beam.webp"
     }
   ],
   "Desc_Rubber_C": [
@@ -1022,7 +1075,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Rubber.webp"
     }
   ],
   "Desc_SteelPlate_C": [
@@ -1041,7 +1095,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Steel_Beam.webp"
     }
   ],
   "Desc_PolymerResin_C": [
@@ -1060,7 +1115,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Polymer_Resin.webp"
     }
   ],
   "Desc_HeavyOilResidue_C": [
@@ -1068,7 +1124,7 @@
       "className": "Desc_HeavyOilResidue_C",
       "name": "Heavy Oil Residue",
       "description": "A by-product of Plastic and Rubber production. Can be further refined into Fuel and Petroleum Coke.",
-      "unlockedBy": "[[Tier 5]] - Oil Processing OR\u003Cbr\u003E[[Tier 5]] - Fluid Packaging",
+      "unlockedBy": "[[Tier 5]] - Oil Processing OR<br>[[Tier 5]] - Fluid Packaging",
       "stackSize": 50000,
       "energy": 400,
       "radioactive": 0,
@@ -1079,14 +1135,15 @@
       "fluidColor": "#6d2d78",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Heavy_Oil_Residue.webp"
     }
   ],
   "Desc_PetroleumCoke_C": [
     {
       "className": "Desc_PetroleumCoke_C",
       "name": "Petroleum Coke",
-      "description": "Used for crafting.\u003Cbr\u003EA carbon-rich material distilled from Heavy Oil Residue. \u003Cbr\u003EUsed as a less efficient Coal replacement.",
+      "description": "Used for crafting.<br>A carbon-rich material distilled from Heavy Oil Residue. <br>Used as a less efficient Coal replacement.",
       "unlockedBy": "[[Tier 5]] - Oil Processing",
       "stackSize": 200,
       "energy": 180,
@@ -1098,7 +1155,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Petroleum_Coke.webp"
     }
   ],
   "Desc_QuartzCrystal_C": [
@@ -1106,7 +1164,7 @@
       "className": "Desc_QuartzCrystal_C",
       "name": "Quartz Crystal",
       "description": "Derived from Raw Quartz. Used in the production of advanced radar technology and high-quality display screens.",
-      "unlockedBy": "[[Quartz Research|MAM Quartz Research]] - Quartz Crystals OR\u003Cbr\u003E[[Tier 7]] - Bauxite Refinement",
+      "unlockedBy": "[[Quartz Research|MAM Quartz Research]] - Quartz Crystals OR<br>[[Tier 7]] - Bauxite Refinement",
       "stackSize": 200,
       "energy": 0,
       "radioactive": 0,
@@ -1117,7 +1175,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Quartz_Crystal.webp"
     }
   ],
   "Desc_SteelIngot_C": [
@@ -1136,7 +1195,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Steel_Ingot.webp"
     }
   ],
   "Desc_SpaceElevatorPart_2_C": [
@@ -1155,7 +1215,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Versatile_Framework.webp"
     }
   ],
   "Desc_PackagedOil_C": [
@@ -1174,7 +1235,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Oil.webp"
     }
   ],
   "Desc_PackagedOilResidue_C": [
@@ -1193,7 +1255,8 @@
       "fluidColor": "#6d2d78",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Heavy_Oil_Residue.webp"
     }
   ],
   "Desc_PackagedWater_C": [
@@ -1212,7 +1275,8 @@
       "fluidColor": "#7ab0d4",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Water.webp"
     }
   ],
   "Desc_CopperIngot_C": [
@@ -1231,7 +1295,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Copper_Ingot.webp"
     }
   ],
   "Desc_AluminumScrap_C": [
@@ -1250,7 +1315,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Aluminum_Scrap.webp"
     }
   ],
   "Desc_AluminumCasing_C": [
@@ -1269,7 +1335,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Aluminum_Casing.webp"
     }
   ],
   "Desc_AluminaSolution_C": [
@@ -1288,7 +1355,8 @@
       "fluidColor": "#c1c1c1",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Alumina_Solution.webp"
     }
   ],
   "Desc_Silica_C": [
@@ -1296,7 +1364,7 @@
       "className": "Desc_Silica_C",
       "name": "Silica",
       "description": "Derived from Raw Quartz. Commonly used to create glass structures, in advanced refinement processes, and for alternative production of electronics.",
-      "unlockedBy": "[[Quartz Research|MAM Quartz Research]] - Silica OR\u003Cbr\u003E[[Tier 7]] - Bauxite Refinement OR\u003Cbr\u003E[[Tier 7]] - Control System Development",
+      "unlockedBy": "[[Quartz Research|MAM Quartz Research]] - Silica OR<br>[[Tier 7]] - Bauxite Refinement OR<br>[[Tier 7]] - Control System Development",
       "stackSize": 200,
       "energy": 0,
       "radioactive": 0,
@@ -1307,7 +1375,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Silica.webp"
     }
   ],
   "Desc_Computer_C": [
@@ -1326,7 +1395,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Computer.webp"
     }
   ],
   "Desc_ModularFrameHeavy_C": [
@@ -1345,7 +1415,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Heavy_Modular_Frame.webp"
     }
   ],
   "Desc_SpaceElevatorPart_1_C": [
@@ -1364,7 +1435,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Smart_Plating.webp"
     }
   ],
   "Desc_HighSpeedConnector_C": [
@@ -1372,7 +1444,7 @@
       "className": "Desc_HighSpeedConnector_C",
       "name": "High-Speed Connector",
       "description": "Connects multiple cables and wires in a very efficient way. Uses a standard pattern, so it has many varied applications.",
-      "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - High-Speed Connector OR\u003Cbr\u003E[[Tier 7]] - Control System Development",
+      "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - High-Speed Connector OR<br>[[Tier 7]] - Control System Development",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -1383,7 +1455,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/High-Speed_Connector.webp"
     }
   ],
   "Desc_SpaceElevatorPart_3_C": [
@@ -1402,14 +1475,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Automated_Wiring.webp"
     }
   ],
   "Desc_Stator_C": [
     {
       "className": "Desc_Stator_C",
       "name": "Stator",
-      "description": "Used for crafting.\u003Cbr\u003EThe static parts of a motor.",
+      "description": "Used for crafting.<br>The static parts of a motor.",
       "unlockedBy": "[[Tier 4]] - Advanced Steel Production",
       "stackSize": 100,
       "energy": 0,
@@ -1421,7 +1495,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Stator.webp"
     }
   ],
   "Desc_CircuitBoardHighSpeed_C": [
@@ -1429,7 +1504,7 @@
       "className": "Desc_CircuitBoardHighSpeed_C",
       "name": "AI Limiter",
       "description": "Controls AIs and keeps them from evolving in malicious ways. Super advanced electronics.",
-      "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - AI Limiter OR\u003Cbr\u003E[[Tier 7]] - Control System Development",
+      "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - AI Limiter OR<br>[[Tier 7]] - Control System Development",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -1440,7 +1515,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/AI_Limiter.webp"
     }
   ],
   "Desc_HighSpeedWire_C": [
@@ -1448,7 +1524,7 @@
       "className": "Desc_HighSpeedWire_C",
       "name": "Quickwire",
       "description": "Caterium's high conductivity and resistance to corrosion make it ideal for small, advanced electronics.",
-      "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - Quickwire OR\u003Cbr\u003E[[Tier 5]] - Petroleum Power",
+      "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - Quickwire OR<br>[[Tier 5]] - Petroleum Power",
       "stackSize": 500,
       "energy": 0,
       "radioactive": 0,
@@ -1459,7 +1535,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Quickwire.webp"
     }
   ],
   "Desc_SpaceElevatorPart_4_C": [
@@ -1478,7 +1555,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Modular_Engine.webp"
     }
   ],
   "Desc_SpaceElevatorPart_5_C": [
@@ -1497,7 +1575,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Adaptive_Control_Unit.webp"
     }
   ],
   "Desc_PressureConversionCube_C": [
@@ -1516,14 +1595,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Pressure_Conversion_Cube.webp"
     }
   ],
   "Desc_PlutoniumCell_C": [
     {
       "className": "Desc_PlutoniumCell_C",
       "name": "Encased Plutonium Cell",
-      "description": "Plutonium Pellets encased in concrete.\u003Cbr\u003EUsed to produce Plutonium Fuel Rods for Nuclear Power production.\u003Cbr\u003EPower Usage: 250-750 MW (500 MW average).\u003Cbr\u003E﻿Caution: Moderately Radioactive.",
+      "description": "Plutonium Pellets encased in concrete.<br>Used to produce Plutonium Fuel Rods for Nuclear Power production.<br>Power Usage: 250-750 MW (500 MW average).<br>﻿Caution: Moderately Radioactive.",
       "unlockedBy": "[[Tier 8]] - Particle Enrichment",
       "stackSize": 200,
       "energy": 0,
@@ -1535,14 +1615,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Encased_Plutonium_Cell.webp"
     }
   ],
   "Desc_PlutoniumPellet_C": [
     {
       "className": "Desc_PlutoniumPellet_C",
       "name": "Plutonium Pellet",
-      "description": "Produced in the Particle Accelerator through conversion of Non-fissile Uranium.\u003Cbr\u003EUsed to produce Encased Plutonium Cells for Plutonium Fuel Rods.\u003Cbr\u003EPower Usage: 250-750 MW (500 MW average).\u003Cbr\u003ECaution: Moderately Radioactive.",
+      "description": "Produced in the Particle Accelerator through conversion of Non-fissile Uranium.<br>Used to produce Encased Plutonium Cells for Plutonium Fuel Rods.<br>Power Usage: 250-750 MW (500 MW average).<br>Caution: Moderately Radioactive.",
       "unlockedBy": "[[Tier 8]] - Particle Enrichment",
       "stackSize": 100,
       "energy": 0,
@@ -1554,14 +1635,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Plutonium_Pellet.webp"
     }
   ],
   "Desc_NonFissibleUranium_C": [
     {
       "className": "Desc_NonFissibleUranium_C",
       "name": "Non-Fissile Uranium",
-      "description": "The Uranium-238 isotope is non-fissile, meaning it cannot be used for nuclear fission. It can, however, be converted into fissile Plutonium in the Particle Accelerator.\u003Cbr\u003ECaution: Mildly Radioactive.",
+      "description": "The Uranium-238 isotope is non-fissile, meaning it cannot be used for nuclear fission. It can, however, be converted into fissile Plutonium in the Particle Accelerator.<br>Caution: Mildly Radioactive.",
       "unlockedBy": "[[Tier 8]] - Particle Enrichment",
       "stackSize": 500,
       "energy": 0,
@@ -1573,14 +1655,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Non-Fissile_Uranium.webp"
     }
   ],
   "Desc_NuclearWaste_C": [
     {
       "className": "Desc_NuclearWaste_C",
       "name": "Uranium Waste",
-      "description": "The by-product of consuming Uranium Fuel Rods in a Nuclear Power Plant.\u003Cbr\u003ENon-Fissile Uranium can be extracted. Handle with caution.\u003Cbr\u003ECaution: HIGHLY Radioactive.",
+      "description": "The by-product of consuming Uranium Fuel Rods in a Nuclear Power Plant.<br>Non-Fissile Uranium can be extracted. Handle with caution.<br>Caution: HIGHLY Radioactive.",
       "unlockedBy": "",
       "stackSize": 500,
       "energy": 0,
@@ -1592,7 +1675,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Uranium_Waste.webp"
     }
   ],
   "Desc_SulfuricAcid_C": [
@@ -1600,7 +1684,7 @@
       "className": "Desc_SulfuricAcid_C",
       "name": "Sulfuric Acid",
       "description": "Produced by combining Sulfur and Water in a complex reaction. Primarily used in refinement processes and Battery production.",
-      "unlockedBy": "[[Tier 7]] - Control System Development OR\u003Cbr\u003E[[Tier 8]] - Nuclear Power",
+      "unlockedBy": "[[Tier 7]] - Control System Development OR<br>[[Tier 8]] - Nuclear Power",
       "stackSize": 50000,
       "energy": 0,
       "radioactive": 0,
@@ -1611,14 +1695,15 @@
       "fluidColor": "#ffff00",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Sulfuric_Acid.webp"
     }
   ],
   "Desc_CopperDust_C": [
     {
       "className": "Desc_CopperDust_C",
       "name": "Copper Powder",
-      "description": "Ground-up Copper Ingots.\u003Cbr\u003EThe high natural density of Copper, combined with the granularity of the powder, makes this part perfect for producing Nuclear Pasta in the Particle Accelerator.",
+      "description": "Ground-up Copper Ingots.<br>The high natural density of Copper, combined with the granularity of the powder, makes this part perfect for producing Nuclear Pasta in the Particle Accelerator.",
       "unlockedBy": "[[Tier 8]] - Particle Enrichment",
       "stackSize": 500,
       "energy": 0,
@@ -1630,7 +1715,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Copper_Powder.webp"
     }
   ],
   "Desc_AluminumPlateReinforced_C": [
@@ -1649,7 +1735,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Heat_Sink.webp"
     }
   ],
   "Desc_ElectromagneticControlRod_C": [
@@ -1668,14 +1755,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Electromagnetic_Control_Rod.webp"
     }
   ],
   "Desc_PlutoniumWaste_C": [
     {
       "className": "Desc_PlutoniumWaste_C",
       "name": "Plutonium Waste",
-      "description": "The by-product of consuming Plutonium Fuel Rods in a Nuclear Power Plant.\u003Cbr\u003EMust be stored in a safe location. Handle with caution.\u003Cbr\u003ECaution: EXTREMELY Radioactive.",
+      "description": "The by-product of consuming Plutonium Fuel Rods in a Nuclear Power Plant.<br>Must be stored in a safe location. Handle with caution.<br>Caution: EXTREMELY Radioactive.",
       "unlockedBy": "",
       "stackSize": 500,
       "energy": 0,
@@ -1687,14 +1775,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Plutonium_Waste.webp"
     }
   ],
   "Desc_SpaceElevatorPart_9_C": [
     {
       "className": "Desc_SpaceElevatorPart_9_C",
       "name": "Nuclear Pasta",
-      "description": "Project Part #9. Ship via the Space Elevator to complete phases of Project Assembly.\u003Cbr\u003EPower Usage: 500-1500 MW (1000 MW average).\u003Cbr\u003ENuclear Pasta is extremely dense degenerate matter, formed when extreme pressure forces protons and electrons together into neutrons. It is theorized to exist naturally within the crust of neutron stars.",
+      "description": "Project Part #9. Ship via the Space Elevator to complete phases of Project Assembly.<br>Power Usage: 500-1500 MW (1000 MW average).<br>Nuclear Pasta is extremely dense degenerate matter, formed when extreme pressure forces protons and electrons together into neutrons. It is theorized to exist naturally within the crust of neutron stars.",
       "unlockedBy": "[[Tier 8]] - Particle Enrichment",
       "stackSize": 50,
       "energy": 0,
@@ -1706,14 +1795,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Nuclear_Pasta.webp"
     }
   ],
   "Desc_UraniumCell_C": [
     {
       "className": "Desc_UraniumCell_C",
       "name": "Encased Uranium Cell",
-      "description": "Used to produce Uranium Fuel Rods for Nuclear Power production. Made from Uranium Ore.\u003Cbr\u003ECaution: Mildly Radioactive.",
+      "description": "Used to produce Uranium Fuel Rods for Nuclear Power production. Made from Uranium Ore.<br>Caution: Mildly Radioactive.",
       "unlockedBy": "[[Tier 8]] - Nuclear Power",
       "stackSize": 200,
       "energy": 0,
@@ -1725,7 +1815,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Encased_Uranium_Cell.webp"
     }
   ],
   "Desc_Battery_C": [
@@ -1744,14 +1835,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Battery.webp"
     }
   ],
   "Desc_DissolvedSilica_C": [
     {
       "className": "Desc_DissolvedSilica_C",
       "name": "Dissolved Silica",
-      "description": "Silica dissolved in Water, produced as part of the alternative refinement of Raw Quartz.\u003Cbr\u003EThe Silica can be extracted from the Water to complete the refinement process.",
+      "description": "Silica dissolved in Water, produced as part of the alternative refinement of Raw Quartz.<br>The Silica can be extracted from the Water to complete the refinement process.",
       "unlockedBy": "",
       "stackSize": 50000,
       "energy": 0,
@@ -1763,14 +1855,15 @@
       "fluidColor": "#e2beee",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Dissolved_Silica.webp"
     }
   ],
   "Desc_SpaceElevatorPart_8_C": [
     {
       "className": "Desc_SpaceElevatorPart_8_C",
       "name": "Thermal Propulsion Rocket",
-      "description": "Project Part #8. Ship via the Space Elevator to complete phases of Project Assembly.\u003Cbr\u003EUses extreme heat to produce the high-pressure plasma required to get Project Assembly into motion.",
+      "description": "Project Part #8. Ship via the Space Elevator to complete phases of Project Assembly.<br>Uses extreme heat to produce the high-pressure plasma required to get Project Assembly into motion.",
       "unlockedBy": "[[Tier 8]] - Leading-Edge Production",
       "stackSize": 50,
       "energy": 0,
@@ -1782,7 +1875,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Thermal_Propulsion_Rocket.webp"
     }
   ],
   "Desc_Gunpowder_C": [
@@ -1801,14 +1895,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Black_Powder.webp"
     }
   ],
   "Desc_Ficsonium_C": [
     {
       "className": "Desc_Ficsonium_C",
       "name": "Ficsonium",
-      "description": "Usage and production of this material is strictly prohibited. On Earth, that is. There are no rules in space, only efficiency. \u003Cbr\u003EPower Usage: 500-1500 MW (1000 MW average).\u003Cbr\u003ECaution: Moderately Radioactive.",
+      "description": "Usage and production of this material is strictly prohibited. On Earth, that is. There are no rules in space, only efficiency. <br>Power Usage: 500-1500 MW (1000 MW average).<br>Caution: Moderately Radioactive.",
       "unlockedBy": "[[Tier 9]] - Peak Efficiency",
       "stackSize": 100,
       "energy": 0,
@@ -1820,7 +1915,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Ficsonium.webp"
     }
   ],
   "Desc_SingularityCell_C": [
@@ -1839,14 +1935,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Singularity_Cell.webp"
     }
   ],
   "Desc_SpaceElevatorPart_11_C": [
     {
       "className": "Desc_SpaceElevatorPart_11_C",
       "name": "Ballistic Warp Drive",
-      "description": "Project Part #11. Ship via the Space Elevator to complete phases of Project Assembly.\u003Cbr\u003EA large amount of force is required for the Warp Drives to activate, so sticking them to rockets was the logical next step. Additionally, results improved immensely when the observers were further removed from the Warp Drives upon activation.",
+      "description": "Project Part #11. Ship via the Space Elevator to complete phases of Project Assembly.<br>A large amount of force is required for the Warp Drives to activate, so sticking them to rockets was the logical next step. Additionally, results improved immensely when the observers were further removed from the Warp Drives upon activation.",
       "unlockedBy": "[[Tier 9]] - Spatial Energy Regulation",
       "stackSize": 50,
       "energy": 0,
@@ -1858,7 +1955,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Ballistic_Warp_Drive.webp"
     }
   ],
   "Desc_Filter_C": [
@@ -1877,15 +1975,16 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Gas_Filter.webp"
     }
   ],
   "Desc_AlienProtein_C": [
     {
       "className": "Desc_AlienProtein_C",
       "name": "Alien Protein",
-      "description": "Ground-up Alien Remains in a neat little package.\u003Cbr\u003EUsed for medical purposes and to research alien organisms.",
-      "unlockedBy": "[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Hog Research OR\u003Cbr\u003E[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Hatcher Research OR\u003Cbr\u003E[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Stinger Research OR\u003Cbr\u003E[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Spitter Research",
+      "description": "Ground-up Alien Remains in a neat little package.<br>Used for medical purposes and to research alien organisms.",
+      "unlockedBy": "[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Hog Research OR<br>[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Hatcher Research OR<br>[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Stinger Research OR<br>[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Spitter Research",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -1896,7 +1995,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Alien_Protein.webp"
     }
   ],
   "Desc_Crystal_C": [
@@ -1915,14 +2015,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Blue_Power_Slug.webp"
     }
   ],
   "Desc_AlienDNACapsule_C": [
     {
       "className": "Desc_AlienDNACapsule_C",
       "name": "Alien DNA Capsule",
-      "description": "Translates organic chemicals into readable alien genetic information.\u003Cbr\u003EUsed for researching alien organisms.\u003Cbr\u003EGo the extra kilometer! Knowledge is power, and power is just efficiency with fewer steps. Depositing Alien DNA Capsules in the AWESOME Sink provides FICSIT with knowledge, and pioneers with Coupons.",
+      "description": "Translates organic chemicals into readable alien genetic information.<br>Used for researching alien organisms.<br>Go the extra kilometer! Knowledge is power, and power is just efficiency with fewer steps. Depositing Alien DNA Capsules in the AWESOME Sink provides FICSIT with knowledge, and pioneers with Coupons.",
       "unlockedBy": "[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Bio-Organic Properties",
       "stackSize": 50,
       "energy": 0,
@@ -1934,7 +2035,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Alien_DNA_Capsule.webp"
     }
   ],
   "Desc_WAT2_C": [
@@ -1953,7 +2055,8 @@
       "fluidColor": "#ffffff",
       "alienItem": true,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Mercer_Sphere.webp"
     }
   ],
   "Desc_Crystal_mk3_C": [
@@ -1972,7 +2075,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Purple_Power_Slug.webp"
     }
   ],
   "Desc_Crystal_mk2_C": [
@@ -1991,7 +2095,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Yellow_Power_Slug.webp"
     }
   ],
   "Desc_GunpowderMK2_C": [
@@ -2010,7 +2115,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Smokeless_Powder.webp"
     }
   ],
   "Desc_XmasStar_C": [
@@ -2029,7 +2135,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/FICSMAS_Wonder_Star.webp"
     }
   ],
   "Desc_XmasBallCluster_C": [
@@ -2048,7 +2155,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/FICSMAS_Ornament_Bundle.webp"
     }
   ],
   "Desc_XmasBranch_C": [
@@ -2067,7 +2175,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/FICSMAS_Tree_Branch.webp"
     }
   ],
   "Desc_XmasWreath_C": [
@@ -2086,14 +2195,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/FICSMAS_Wreath.webp"
     }
   ],
   "Desc_CandyCane_C": [
     {
       "className": "Desc_CandyCane_C",
       "name": "Candy Cane",
-      "description": "A delicious Candy Cane to be enjoyed during the FICSMAS Holidays.\u003Cbr\u003E*Disclaimer: Not for human consumption...",
+      "description": "A delicious Candy Cane to be enjoyed during the FICSMAS Holidays.<br>*Disclaimer: Not for human consumption...",
       "unlockedBy": "[[FICSMAS Holiday Event Research|MAM FICSMAS Holiday Event Research]] - Candy Cane Basher",
       "stackSize": 100,
       "energy": 0,
@@ -2105,7 +2215,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Candy_Cane.webp"
     }
   ],
   "Desc_Snow_C": [
@@ -2124,7 +2235,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/FICSMAS_Actual_Snow.webp"
     }
   ],
   "Desc_XmasBow_C": [
@@ -2143,14 +2255,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/FICSMAS_Bow.webp"
     }
   ],
   "Desc_Gift_C": [
     {
       "className": "Desc_Gift_C",
       "name": "FICSMAS Gift",
-      "description": "Gifts that have inexplicably fallen from the sky or spawned from a FICSMAS Gift Tree.\u003Cbr\u003EDon’t question it—they’re used to produce FICSMAS buildings and parts.\u003Cbr\u003EThese Gifts are part of the FICSMAS Event, like the calendar in the HUB.",
+      "description": "Gifts that have inexplicably fallen from the sky or spawned from a FICSMAS Gift Tree.<br>Don’t question it—they’re used to produce FICSMAS buildings and parts.<br>These Gifts are part of the FICSMAS Event, like the calendar in the HUB.",
       "unlockedBy": "",
       "stackSize": 200,
       "energy": 0,
@@ -2162,7 +2275,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/FICSMAS_Gift.webp"
     }
   ],
   "Desc_XmasBall1_C": [
@@ -2181,7 +2295,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Red_FICSMAS_Ornament.webp"
     }
   ],
   "Desc_XmasBall2_C": [
@@ -2200,7 +2315,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Blue_FICSMAS_Ornament.webp"
     }
   ],
   "Desc_XmasBall3_C": [
@@ -2219,7 +2335,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Copper_FICSMAS_Ornament.webp"
     }
   ],
   "Desc_XmasBall4_C": [
@@ -2238,7 +2355,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Iron_FICSMAS_Ornament.webp"
     }
   ],
   "Desc_Rebar_Explosive_C": [
@@ -2257,14 +2375,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Explosive_Rebar.webp"
     }
   ],
   "Desc_Rebar_Stunshot_C": [
     {
       "className": "Desc_Rebar_Stunshot_C",
       "name": "Stun Rebar",
-      "description": "Electrocutes the target on impact, stunning it for a short time.\u003Cbr\u003EStun Duration: 5 seconds",
+      "description": "Electrocutes the target on impact, stunning it for a short time.<br>Stun Duration: 5 seconds",
       "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - Stun Rebar",
       "stackSize": 100,
       "energy": 0,
@@ -2276,7 +2395,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Stun_Rebar.webp"
     }
   ],
   "Desc_SpikedRebar_C": [
@@ -2295,14 +2415,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Iron_Rebar.webp"
     }
   ],
   "Desc_CartridgeSmartProjectile_C": [
     {
       "className": "Desc_CartridgeSmartProjectile_C",
       "name": "Homing Rifle Ammo",
-      "description": "The bullet guidance system built into this ammunition allows it to accurately hit any target within the reticle area.\u003Cbr\u003EEspecially useful when dealing with agile threats, or for pioneers who can't be bothered to aim properly.",
+      "description": "The bullet guidance system built into this ammunition allows it to accurately hit any target within the reticle area.<br>Especially useful when dealing with agile threats, or for pioneers who can't be bothered to aim properly.",
       "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - Bullet Guidance System",
       "stackSize": 500,
       "energy": 0,
@@ -2314,7 +2435,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Homing_Rifle_Ammo.webp"
     }
   ],
   "Desc_NobeliskCluster_C": [
@@ -2333,7 +2455,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Cluster_Nobelisk.webp"
     }
   ],
   "Desc_NobeliskExplosive_C": [
@@ -2352,7 +2475,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Nobelisk.webp"
     }
   ],
   "Desc_NobeliskGas_C": [
@@ -2371,14 +2495,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Gas_Nobelisk.webp"
     }
   ],
   "Desc_NobeliskNuke_C": [
     {
       "className": "Desc_NobeliskNuke_C",
       "name": "Nuke Nobelisk",
-      "description": "Uses a nuclear fission reaction to generate a massive explosion.\u003Cbr\u003EWARNING: Ensure all FICSIT property is clear of the blast zone before detonation.",
+      "description": "Uses a nuclear fission reaction to generate a massive explosion.<br>WARNING: Ensure all FICSIT property is clear of the blast zone before detonation.",
       "unlockedBy": "[[Sulfur Research|MAM Sulfur Research]] - Nuclear Deterrent Development",
       "stackSize": 50,
       "energy": 0,
@@ -2390,7 +2515,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Nuke_Nobelisk.webp"
     }
   ],
   "Desc_NobeliskShockwave_C": [
@@ -2409,7 +2535,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Pulse_Nobelisk.webp"
     }
   ],
   "Desc_Fireworks_Projectile_01_C": [
@@ -2428,7 +2555,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Sweet_Fireworks.webp"
     }
   ],
   "Desc_Fireworks_Projectile_02_C": [
@@ -2447,7 +2575,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Fancy_Fireworks.webp"
     }
   ],
   "Desc_Fireworks_Projectile_03_C": [
@@ -2466,7 +2595,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Sparkly_Fireworks.webp"
     }
   ],
   "Desc_SnowballProjectile_C": [
@@ -2485,7 +2615,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Snowball.webp"
     }
   ],
   "Desc_RebarGunProjectile_C": [
@@ -2504,7 +2635,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Rebar_Gun.webp"
     }
   ],
   "BP_EquipmentDescriptorRifle_C": [
@@ -2523,14 +2655,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Rifle.webp"
     }
   ],
   "BP_EquipmentDescriptorHazmatSuit_C": [
     {
       "className": "BP_EquipmentDescriptorHazmatSuit_C",
       "name": "Hazmat Suit",
-      "description": "Shields pioneers from the adverse effects of radiation. \u003Cbr\u003EConsumes Iodine-Infused Filters from the pioneer's inventory when worn in radioactive areas.",
+      "description": "Shields pioneers from the adverse effects of radiation. <br>Consumes Iodine-Infused Filters from the pioneer's inventory when worn in radioactive areas.",
       "unlockedBy": "[[Tier 7]] - Hazmat Suit",
       "stackSize": 1,
       "energy": 0,
@@ -2542,7 +2675,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Hazmat_Suit.webp"
     }
   ],
   "BP_EquipmentDescriptorNobeliskDetonator_C": [
@@ -2561,7 +2695,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Nobelisk_Detonator.webp"
     }
   ],
   "BP_EquipmentDescriptorShockShank_C": [
@@ -2580,7 +2715,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Xeno-Zapper.webp"
     }
   ],
   "BP_EquipmentDescriptorObjectScanner_C": [
@@ -2599,14 +2735,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Object_Scanner.webp"
     }
   ],
   "BP_ItemDescriptorPortableMiner_C": [
     {
       "className": "BP_ItemDescriptorPortableMiner_C",
       "name": "Portable Miner",
-      "description": "Automatically extracts a resource when placed on a resource node.\u003Cbr\u003ENote: Has limited storage space.",
+      "description": "Automatically extracts a resource when placed on a resource node.<br>Note: Has limited storage space.",
       "unlockedBy": "[[Tier 0]] - HUB Upgrade 1",
       "stackSize": 50,
       "energy": 0,
@@ -2618,14 +2755,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Portable_Miner.webp"
     }
   ],
   "BP_EquipmentDescriptorHoverPack_C": [
     {
       "className": "BP_EquipmentDescriptorHoverPack_C",
       "name": "Hoverpack",
-      "description": "Power Consumption: 100 MW\u003Cbr\u003EAllows pioneers to move vertically and hover in mid-air to improve building efficiency and factory traversal. Wirelessly connects to nearby power connections, such as Power Poles and Buildings, for power consumption.\u003Cbr\u003ESlow-Fall: Hold {PlayerMovement_Jump} after losing connection mid-air.\u003Cbr\u003EDisable Hoverpack: Double tap {PlayerMovement_Crouch} while hovering.",
+      "description": "Power Consumption: 100 MW<br>Allows pioneers to move vertically and hover in mid-air to improve building efficiency and factory traversal. Wirelessly connects to nearby power connections, such as Power Poles and Buildings, for power consumption.<br>Slow-Fall: Hold {PlayerMovement_Jump} after losing connection mid-air.<br>Disable Hoverpack: Double tap {PlayerMovement_Crouch} while hovering.",
       "unlockedBy": "[[Tier 7]] - Hoverpack",
       "stackSize": 1,
       "energy": 0,
@@ -2637,14 +2775,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Hoverpack.webp"
     }
   ],
   "BP_EquipmentDescriptorJetPack_C": [
     {
       "className": "BP_EquipmentDescriptorJetPack_C",
       "name": "Jetpack",
-      "description": "Allows pioneers to travel through the air with increased control.\u003Cbr\u003EFuel is automatically consumed from the pioneer's inventory to refill the Jetpack while on the ground.\u003Cbr\u003EDifferent fuel types can be used and provide different levels of Jetpack efficiency. The preferred fuel type will be used if available, and can be set in the equipment inventory.",
+      "description": "Allows pioneers to travel through the air with increased control.<br>Fuel is automatically consumed from the pioneer's inventory to refill the Jetpack while on the ground.<br>Different fuel types can be used and provide different levels of Jetpack efficiency. The preferred fuel type will be used if available, and can be set in the equipment inventory.",
       "unlockedBy": "[[Tier 5]] - Jetpack",
       "stackSize": 1,
       "energy": 0,
@@ -2656,7 +2795,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Jetpack.webp"
     }
   ],
   "BP_EquipmentDescriptorStunSpear_C": [
@@ -2675,14 +2815,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Xeno-Basher.webp"
     }
   ],
   "Desc_Chainsaw_C": [
     {
       "className": "Desc_Chainsaw_C",
       "name": "Chainsaw",
-      "description": "Clears an area of flora that is too difficult to remove by hand.\u003Cbr\u003EFuel: Biofuel",
+      "description": "Clears an area of flora that is too difficult to remove by hand.<br>Fuel: Biofuel",
       "unlockedBy": "[[Tier 2]] - Obstacle Clearing",
       "stackSize": 1,
       "energy": 0,
@@ -2694,14 +2835,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Chainsaw.webp"
     }
   ],
   "BP_EquipmentDescriptorJumpingStilts_C": [
     {
       "className": "BP_EquipmentDescriptorJumpingStilts_C",
       "name": "Blade Runners",
-      "description": "An exoskeleton for the lower legs that assists movement, allowing pioneers to sprint faster and jump higher.\u003Cbr\u003EAlso dampens the impact of landing.",
+      "description": "An exoskeleton for the lower legs that assists movement, allowing pioneers to sprint faster and jump higher.<br>Also dampens the impact of landing.",
       "unlockedBy": "[[Quartz Research|MAM Quartz Research]] - Blade Runners",
       "stackSize": 1,
       "energy": 0,
@@ -2713,14 +2855,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Blade_Runners.webp"
     }
   ],
   "BP_EqDescZipLine_C": [
     {
       "className": "BP_EqDescZipLine_C",
       "name": "Zipline",
-      "description": "Provides faster traversal of factories by allowing pioneers to zip along Power lines.\u003Cbr\u003EActivate the Zipline and aim at a nearby Power Line to connect to it.",
+      "description": "Provides faster traversal of factories by allowing pioneers to zip along Power lines.<br>Activate the Zipline and aim at a nearby Power Line to connect to it.",
       "unlockedBy": "[[Caterium Research|MAM Caterium Research]] - Zipline",
       "stackSize": 1,
       "energy": 0,
@@ -2732,14 +2875,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Zipline.webp"
     }
   ],
   "BP_EquipmentDescriptorGasmask_C": [
     {
       "className": "BP_EquipmentDescriptorGasmask_C",
       "name": "Gas Mask",
-      "description": "Allows pioneers to breathe normally in toxic gas-filled areas.\u003Cbr\u003EConsumes Gas Filters from the pioneer's inventory when in use.",
+      "description": "Allows pioneers to breathe normally in toxic gas-filled areas.<br>Consumes Gas Filters from the pioneer's inventory when in use.",
       "unlockedBy": "[[Mycelia Research|MAM Mycelia Research]] - Gas Mask",
       "stackSize": 1,
       "energy": 0,
@@ -2751,7 +2895,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Gas_Mask.webp"
     }
   ],
   "BP_EquipmentDescriptorCandyCane_C": [
@@ -2770,14 +2915,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Candy_Cane_Basher.webp"
     }
   ],
   "Desc_GolfCart_C": [
     {
       "className": "Desc_GolfCart_C",
       "name": "Factory Cart™",
-      "description": "The one and only FICSIT Factory Cart™.\u003Cbr\u003ENow with special FICSIT-Foundation-only Grip Wheels, for an even smoother and faster factory floor experience!",
+      "description": "The one and only FICSIT Factory Cart™.<br>Now with special FICSIT-Foundation-only Grip Wheels, for an even smoother and faster factory floor experience!",
       "unlockedBy": "[[AWESOME Shop]] - FICSIT Factory Cart™",
       "stackSize": 1,
       "energy": 0,
@@ -2789,14 +2935,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Factory_Cart™.webp"
     }
   ],
   "Desc_GolfCartGold_C": [
     {
       "className": "Desc_GolfCartGold_C",
       "name": "Golden Factory Cart™",
-      "description": "The one and only Golden FICSIT Factory Cart™\u003Cbr\u003EYou have now officially ascended. \u003Cbr\u003EGo forth now, Master of Spaghetti, God of the Factory, Sinker of Cups, Employee of the Planet... travel in STYLE!",
+      "description": "The one and only Golden FICSIT Factory Cart™<br>You have now officially ascended. <br>Go forth now, Master of Spaghetti, God of the Factory, Sinker of Cups, Employee of the Planet... travel in STYLE!",
       "unlockedBy": "[[AWESOME Shop]] - Golden FICSIT Factory Cart™",
       "stackSize": 1,
       "energy": 0,
@@ -2808,7 +2955,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Golden_Factory_Cart™.webp"
     }
   ],
   "Desc_Rebar_Spreadshot_C": [
@@ -2827,7 +2975,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Shatter_Rebar.webp"
     }
   ],
   "Desc_CartridgeChaos_C": [
@@ -2846,7 +2995,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Turbo_Rifle_Ammo.webp"
     }
   ],
   "Desc_CartridgeStandard_C": [
@@ -2865,15 +3015,16 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Rifle_Ammo.webp"
     }
   ],
   "Desc_Medkit_C": [
     {
       "className": "Desc_Medkit_C",
       "name": "Medicinal Inhaler",
-      "description": "Fully restores health when used.\u003Cbr\u003EThe FICSIT Medicinal Inhaler can be produced from a variety of different ingredients.",
-      "unlockedBy": "[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Protein Inhaler OR\u003Cbr\u003E[[Mycelia Research|MAM Mycelia Research]] - Vitamin Inhaler OR\u003Cbr\u003E[[Mycelia Research|MAM Mycelia Research]] - Therapeutic Inhaler OR\u003Cbr\u003E[[Nutrients Research|MAM Nutrients Research]] - Nutritional Inhaler",
+      "description": "Fully restores health when used.<br>The FICSIT Medicinal Inhaler can be produced from a variety of different ingredients.",
+      "unlockedBy": "[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Protein Inhaler OR<br>[[Mycelia Research|MAM Mycelia Research]] - Vitamin Inhaler OR<br>[[Mycelia Research|MAM Mycelia Research]] - Therapeutic Inhaler OR<br>[[Nutrients Research|MAM Nutrients Research]] - Nutritional Inhaler",
       "stackSize": 50,
       "energy": 0,
       "radioactive": 0,
@@ -2884,14 +3035,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Medicinal_Inhaler.webp"
     }
   ],
   "Desc_OreIron_C": [
     {
       "className": "Desc_OreIron_C",
       "name": "Iron Ore",
-      "description": "Used for crafting.\u003Cbr\u003EThe most essential basic resource.",
+      "description": "Used for crafting.<br>The most essential basic resource.",
       "unlockedBy": "[[Tier 9]] - Matter Conversion",
       "stackSize": 100,
       "energy": 0,
@@ -2903,15 +3055,16 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Iron_Ore.webp"
     }
   ],
   "Desc_Coal_C": [
     {
       "className": "Desc_Coal_C",
       "name": "Coal",
-      "description": "Mainly used as fuel for vehicles \u0026 Coal-Powered Generators, or in Steel production.",
-      "unlockedBy": "[[Tier 9]] - Matter Conversion OR\u003Cbr\u003E[[Sulfur Research|MAM Sulfur Research]] - Compacted Coal",
+      "description": "Mainly used as fuel for vehicles & Coal-Powered Generators, or in Steel production.",
+      "unlockedBy": "[[Tier 9]] - Matter Conversion OR<br>[[Sulfur Research|MAM Sulfur Research]] - Compacted Coal",
       "stackSize": 100,
       "energy": 300,
       "radioactive": 0,
@@ -2922,7 +3075,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Coal.webp"
     }
   ],
   "Desc_NitrogenGas_C": [
@@ -2930,7 +3084,7 @@
       "className": "Desc_NitrogenGas_C",
       "name": "Nitrogen Gas",
       "description": "Has a variety of uses, including metallurgy, cooling, and Nitric Acid production. On MASSAGE-2 (AB)b, it can be extracted from underground gas wells.",
-      "unlockedBy": "[[Tier 8]] - Advanced Aluminum Production OR\u003Cbr\u003E[[Tier 9]] - Matter Conversion",
+      "unlockedBy": "[[Tier 8]] - Advanced Aluminum Production OR<br>[[Tier 9]] - Matter Conversion",
       "stackSize": 50000,
       "energy": 0,
       "radioactive": 0,
@@ -2941,7 +3095,8 @@
       "fluidColor": "#595959",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Nitrogen_Gas.webp"
     }
   ],
   "Desc_Sulfur_C": [
@@ -2960,7 +3115,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Sulfur.webp"
     }
   ],
   "Desc_Water_C": [
@@ -2968,7 +3124,7 @@
       "className": "Desc_Water_C",
       "name": "Water",
       "description": "It's water.",
-      "unlockedBy": "[[Tier 5]] - Fluid Packaging OR\u003Cbr\u003E[[Tier 7]] - Bauxite Refinement OR\u003Cbr\u003E[[Tier 7]] - Control System Development OR\u003Cbr\u003E[[Tier 8]] - Particle Enrichment",
+      "unlockedBy": "[[Tier 5]] - Fluid Packaging OR<br>[[Tier 7]] - Bauxite Refinement OR<br>[[Tier 7]] - Control System Development OR<br>[[Tier 8]] - Particle Enrichment",
       "stackSize": 50000,
       "energy": 0,
       "radioactive": 0,
@@ -2979,7 +3135,8 @@
       "fluidColor": "#7ab0d4",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Water.webp"
     }
   ],
   "Desc_SAM_C": [
@@ -2998,7 +3155,8 @@
       "fluidColor": "#ffffff",
       "alienItem": true,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/SAM.webp"
     }
   ],
   "Desc_OreBauxite_C": [
@@ -3017,7 +3175,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Bauxite.webp"
     }
   ],
   "Desc_OreGold_C": [
@@ -3036,14 +3195,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Caterium_Ore.webp"
     }
   ],
   "Desc_OreCopper_C": [
     {
       "className": "Desc_OreCopper_C",
       "name": "Copper Ore",
-      "description": "Used for crafting.\u003Cbr\u003EA basic resource primarily used for electricity.",
+      "description": "Used for crafting.<br>A basic resource primarily used for electricity.",
       "unlockedBy": "[[Tier 9]] - Matter Conversion",
       "stackSize": 100,
       "energy": 0,
@@ -3055,7 +3215,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Copper_Ore.webp"
     }
   ],
   "Desc_RawQuartz_C": [
@@ -3074,14 +3235,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Raw_Quartz.webp"
     }
   ],
   "Desc_Stone_C": [
     {
       "className": "Desc_Stone_C",
       "name": "Limestone",
-      "description": "Used for crafting.\u003Cbr\u003EA basic resource primarily used for stable Foundations.",
+      "description": "Used for crafting.<br>A basic resource primarily used for stable Foundations.",
       "unlockedBy": "[[Tier 9]] - Matter Conversion",
       "stackSize": 100,
       "energy": 0,
@@ -3093,14 +3255,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Limestone.webp"
     }
   ],
   "Desc_OreUranium_C": [
     {
       "className": "Desc_OreUranium_C",
       "name": "Uranium",
-      "description": "A radioactive element. \u003Cbr\u003EUsed to produce Encased Uranium Cells for Uranium Fuel Rods.\u003Cbr\u003ECaution: Moderately Radioactive.",
+      "description": "A radioactive element. <br>Used to produce Encased Uranium Cells for Uranium Fuel Rods.<br>Caution: Moderately Radioactive.",
       "unlockedBy": "[[Tier 9]] - Matter Conversion",
       "stackSize": 100,
       "energy": 0,
@@ -3112,7 +3275,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Uranium.webp"
     }
   ],
   "Desc_LiquidOil_C": [
@@ -3131,14 +3295,15 @@
       "fluidColor": "#190019",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Crude_Oil.webp"
     }
   ],
   "Desc_Leaves_C": [
     {
       "className": "Desc_Leaves_C",
       "name": "Leaves",
-      "description": "Primarily used as fuel.\u003Cbr\u003EBiomass Burners and vehicles can use Leaves for power.",
+      "description": "Primarily used as fuel.<br>Biomass Burners and vehicles can use Leaves for power.",
       "unlockedBy": "",
       "stackSize": 500,
       "energy": 15,
@@ -3150,14 +3315,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Leaves.webp"
     }
   ],
   "Desc_Wood_C": [
     {
       "className": "Desc_Wood_C",
       "name": "Wood",
-      "description": "Primarily used as fuel.\u003Cbr\u003EBiomass Burners and vehicles can use Wood for power.",
+      "description": "Primarily used as fuel.<br>Biomass Burners and vehicles can use Wood for power.",
       "unlockedBy": "",
       "stackSize": 200,
       "energy": 100,
@@ -3169,15 +3335,16 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Wood.webp"
     }
   ],
   "Desc_GenericBiomass_C": [
     {
       "className": "Desc_GenericBiomass_C",
       "name": "Biomass",
-      "description": "Primarily used as fuel.\u003Cbr\u003EBiomass Burners and vehicles can use it for power.\u003Cbr\u003EBiomass is much more energy-efficient than raw biological matter.",
-      "unlockedBy": "[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Bio-Organic Properties OR\u003Cbr\u003E[[Mycelia Research|MAM Mycelia Research]] - Mycelia OR\u003Cbr\u003E[[Tier 0]] - HUB Upgrade 6",
+      "description": "Primarily used as fuel.<br>Biomass Burners and vehicles can use it for power.<br>Biomass is much more energy-efficient than raw biological matter.",
+      "unlockedBy": "[[Alien Megafauna Research|MAM Alien Megafauna Research]] - Bio-Organic Properties OR<br>[[Mycelia Research|MAM Mycelia Research]] - Mycelia OR<br>[[Tier 0]] - HUB Upgrade 6",
       "stackSize": 200,
       "energy": 180,
       "radioactive": 0,
@@ -3188,7 +3355,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Biomass.webp"
     }
   ],
   "Desc_Biofuel_C": [
@@ -3207,7 +3375,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Solid_Biofuel.webp"
     }
   ],
   "Desc_LiquidBiofuel_C": [
@@ -3226,7 +3395,8 @@
       "fluidColor": "#3b532c",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Liquid_Biofuel.webp"
     }
   ],
   "Desc_PackagedBiofuel_C": [
@@ -3245,7 +3415,8 @@
       "fluidColor": "#3a532a",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Liquid_Biofuel.webp"
     }
   ],
   "Desc_PackagedAlumina_C": [
@@ -3264,7 +3435,8 @@
       "fluidColor": "#3a532a",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Alumina_Solution.webp"
     }
   ],
   "Desc_PackagedNitrogenGas_C": [
@@ -3283,7 +3455,8 @@
       "fluidColor": "#3a532a",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Nitrogen_Gas.webp"
     }
   ],
   "Desc_PackagedNitricAcid_C": [
@@ -3302,7 +3475,8 @@
       "fluidColor": "#3a532a",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Nitric_Acid.webp"
     }
   ],
   "Desc_PackagedSulfuricAcid_C": [
@@ -3321,15 +3495,16 @@
       "fluidColor": "#3a532a",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Packaged_Sulfuric_Acid.webp"
     }
   ],
   "Desc_Fabric_C": [
     {
       "className": "Desc_Fabric_C",
       "name": "Fabric",
-      "description": "Used to craft equipment.\u003Cbr\u003EFlexible but durable fabric.",
-      "unlockedBy": "[[Mycelia Research|MAM Mycelia Research]] - Synthetic Polyester Fabric OR\u003Cbr\u003E[[Mycelia Research|MAM Mycelia Research]] - Fabric",
+      "description": "Used to craft equipment.<br>Flexible but durable fabric.",
+      "unlockedBy": "[[Mycelia Research|MAM Mycelia Research]] - Synthetic Polyester Fabric OR<br>[[Mycelia Research|MAM Mycelia Research]] - Fabric",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -3340,14 +3515,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Fabric.webp"
     }
   ],
   "Desc_Mycelia_C": [
     {
       "className": "Desc_Mycelia_C",
       "name": "Mycelia",
-      "description": "Used for crafting.\u003Cbr\u003EBiomass Burners and vehicles can also use Mycelia for power.",
+      "description": "Used for crafting.<br>Biomass Burners and vehicles can also use Mycelia for power.",
       "unlockedBy": "",
       "stackSize": 200,
       "energy": 20,
@@ -3359,14 +3535,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Mycelia.webp"
     }
   ],
   "Desc_HogParts_C": [
     {
       "className": "Desc_HogParts_C",
       "name": "Hog Remains",
-      "description": "The carapace of an alien Hog creature.\u003Cbr\u003EUsed for MAM research.",
+      "description": "The carapace of an alien Hog creature.<br>Used for MAM research.",
       "unlockedBy": "",
       "stackSize": 50,
       "energy": 0,
@@ -3378,14 +3555,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Hog_Remains.webp"
     }
   ],
   "Desc_SpitterParts_C": [
     {
       "className": "Desc_SpitterParts_C",
       "name": "Spitter Remains",
-      "description": "The remains of a plasma-spitting alien creature.\u003Cbr\u003EUsed for MAM research.",
+      "description": "The remains of a plasma-spitting alien creature.<br>Used for MAM research.",
       "unlockedBy": "",
       "stackSize": 50,
       "energy": 0,
@@ -3397,14 +3575,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Spitter_Remains.webp"
     }
   ],
   "Desc_StingerParts_C": [
     {
       "className": "Desc_StingerParts_C",
       "name": "Stinger Remains",
-      "description": "The remains of whatever that creepy thing was.\u003Cbr\u003EUsed for MAM research.",
+      "description": "The remains of whatever that creepy thing was.<br>Used for MAM research.",
       "unlockedBy": "",
       "stackSize": 50,
       "energy": 0,
@@ -3416,14 +3595,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Stinger_Remains.webp"
     }
   ],
   "Desc_HatcherParts_C": [
     {
       "className": "Desc_HatcherParts_C",
       "name": "Hatcher Remains",
-      "description": "The shell-like remains of an alien... thing.\u003Cbr\u003EUsed for MAM research.",
+      "description": "The shell-like remains of an alien... thing.<br>Used for MAM research.",
       "unlockedBy": "",
       "stackSize": 50,
       "energy": 0,
@@ -3435,15 +3615,16 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Hatcher_Remains.webp"
     }
   ],
   "Desc_CrystalShard_C": [
     {
       "className": "Desc_CrystalShard_C",
       "name": "Power Shard",
-      "description": "Power Slug mucus compressed into a solid crystal-like shard. \u003Cbr\u003EIt radiates a strange power.",
-      "unlockedBy": "[[Power Slugs Research|MAM Power Slugs Research]] - Blue Power Slugs OR\u003Cbr\u003E[[Power Slugs Research|MAM Power Slugs Research]] - Yellow Power Slugs OR\u003Cbr\u003E[[Power Slugs Research|MAM Power Slugs Research]] - Purple Power Slugs OR\u003Cbr\u003E[[Power Slugs Research|MAM Power Slugs Research]] - Synthetic Power Shards",
+      "description": "Power Slug mucus compressed into a solid crystal-like shard. <br>It radiates a strange power.",
+      "unlockedBy": "[[Power Slugs Research|MAM Power Slugs Research]] - Blue Power Slugs OR<br>[[Power Slugs Research|MAM Power Slugs Research]] - Yellow Power Slugs OR<br>[[Power Slugs Research|MAM Power Slugs Research]] - Purple Power Slugs OR<br>[[Power Slugs Research|MAM Power Slugs Research]] - Synthetic Power Shards",
       "stackSize": 100,
       "energy": 0,
       "radioactive": 0,
@@ -3454,7 +3635,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Power_Shard.webp"
     }
   ],
   "Desc_WAT1_C": [
@@ -3473,14 +3655,15 @@
       "fluidColor": "#ffffff",
       "alienItem": true,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Somersloop.webp"
     }
   ],
   "Desc_PlutoniumFuelRod_C": [
     {
       "className": "Desc_PlutoniumFuelRod_C",
       "name": "Plutonium Fuel Rod",
-      "description": "Used as fuel for Nuclear Power Plants.\u003Cbr\u003ECaution: Produces radioactive Plutonium Waste when consumed.\u003Cbr\u003ECaution: HIGHLY Radioactive.",
+      "description": "Used as fuel for Nuclear Power Plants.<br>Caution: Produces radioactive Plutonium Waste when consumed.<br>Caution: HIGHLY Radioactive.",
       "unlockedBy": "[[Tier 8]] - Particle Enrichment",
       "stackSize": 50,
       "energy": 1500000,
@@ -3492,14 +3675,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Plutonium_Fuel_Rod.webp"
     }
   ],
   "Desc_NuclearFuelRod_C": [
     {
       "className": "Desc_NuclearFuelRod_C",
       "name": "Uranium Fuel Rod",
-      "description": "Used as fuel for Nuclear Power Plants.\u003Cbr\u003ECaution: Produces radioactive Uranium Waste when consumed.\u003Cbr\u003ECaution: Moderately Radioactive.",
+      "description": "Used as fuel for Nuclear Power Plants.<br>Caution: Produces radioactive Uranium Waste when consumed.<br>Caution: Moderately Radioactive.",
       "unlockedBy": "[[Tier 8]] - Nuclear Power",
       "stackSize": 50,
       "energy": 750000,
@@ -3511,14 +3695,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Uranium_Fuel_Rod.webp"
     }
   ],
   "Desc_FicsoniumFuelRod_C": [
     {
       "className": "Desc_FicsoniumFuelRod_C",
       "name": "Ficsonium Fuel Rod",
-      "description": "Used as fuel for Nuclear Power Plants.\u003Cbr\u003EThe power source that put FICSIT on the map. Literally. The crater is still there.\u003Cbr\u003ECaution: Moderately Radioactive.",
+      "description": "Used as fuel for Nuclear Power Plants.<br>The power source that put FICSIT on the map. Literally. The crater is still there.<br>Caution: Moderately Radioactive.",
       "unlockedBy": "[[Tier 9]] - Peak Efficiency",
       "stackSize": 50,
       "energy": 150000,
@@ -3530,14 +3715,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Ficsonium_Fuel_Rod.webp"
     }
   ],
   "Desc_Berry_C": [
     {
       "className": "Desc_Berry_C",
       "name": "Paleberry",
-      "description": "Consumable\u003Cbr\u003EEat to restore 1 health segment.",
+      "description": "Consumable<br>Eat to restore 1 health segment.",
       "unlockedBy": "",
       "stackSize": 50,
       "energy": 0,
@@ -3549,14 +3735,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Paleberry.webp"
     }
   ],
   "Desc_Nut_C": [
     {
       "className": "Desc_Nut_C",
       "name": "Beryl Nut",
-      "description": "Consumable\u003Cbr\u003EEat to restore half a health segment.",
+      "description": "Consumable<br>Eat to restore half a health segment.",
       "unlockedBy": "",
       "stackSize": 100,
       "energy": 0,
@@ -3568,14 +3755,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Beryl_Nut.webp"
     }
   ],
   "Desc_Shroom_C": [
     {
       "className": "Desc_Shroom_C",
       "name": "Bacon Agaric",
-      "description": "Consumable\u003Cbr\u003EEat to restore 2 health segments.",
+      "description": "Consumable<br>Eat to restore 2 health segments.",
       "unlockedBy": "",
       "stackSize": 50,
       "energy": 0,
@@ -3587,7 +3775,8 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Bacon_Agaric.webp"
     }
   ],
   "Desc_Parachute_C": [
@@ -3606,14 +3795,15 @@
       "fluidColor": "#ffffff",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Parachute.webp"
     }
   ],
   "Desc_AlienPowerFuel_C": [
     {
       "className": "Desc_AlienPowerFuel_C",
       "name": "Alien Power Matrix",
-      "description": "This intricate condensed-matter matrix is used to enhance the output of the Alien Power Augmenter.\u003Cbr\u003EInitially developed in efforts to create a human-made Somersloop, the Alien Power Matrix cannot sustain the extra-dimensional energy connection on its own. However, it can effectively stabilize the energy stream of the Somersloop.",
+      "description": "This intricate condensed-matter matrix is used to enhance the output of the Alien Power Augmenter.<br>Initially developed in efforts to create a human-made Somersloop, the Alien Power Matrix cannot sustain the extra-dimensional energy connection on its own. However, it can effectively stabilize the energy stream of the Somersloop.",
       "unlockedBy": "[[Alien Technology Research|MAM Alien Technology Research]] - Alien Power Matrix",
       "stackSize": 50,
       "energy": 0,
@@ -3625,7 +3815,8 @@
       "fluidColor": "#ffffff",
       "alienItem": true,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/Alien_Power_Matrix.webp"
     }
   ],
   "Desc_ResourceSinkCoupon_C": [
@@ -3644,7 +3835,8 @@
       "fluidColor": "#000000",
       "alienItem": false,
       "stable": true,
-      "experimental": true
+      "experimental": true,
+      "assetPath": "assets/images/FICSIT_Coupon.webp"
     }
   ]
 }
