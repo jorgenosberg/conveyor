@@ -1,3 +1,5 @@
+import '../logging/app_logger.dart';
+
 enum ItemForm { solid, liquid, gas }
 
 class GameItem {
@@ -14,6 +16,7 @@ class GameItem {
   final ItemForm form;
   final String fluidColor;
   final bool alienItem;
+  final String? assetPath;
 
   const GameItem({
     required this.className,
@@ -29,6 +32,7 @@ class GameItem {
     required this.form,
     required this.fluidColor,
     required this.alienItem,
+    this.assetPath,
   });
 
   String get wikiUrl {
@@ -36,12 +40,22 @@ class GameItem {
     return 'https://satisfactory.wiki.gg/wiki/$slug';
   }
 
-  String get imagePath => 'assets/images/${name.replaceAll(' ', '_')}.webp';
+  String get imagePath =>
+      assetPath ?? 'assets/images/${name.replaceAll(' ', '_')}.webp';
 
   bool get isFluid => form == ItemForm.liquid || form == ItemForm.gas;
   bool get isRadioactive => radioactive > 0;
 
   factory GameItem.fromJson(Map<String, dynamic> json) {
+    final assetPath = json['assetPath'] as String?;
+    if (assetPath == null || assetPath.isEmpty) {
+      final name = json['name'] as String?;
+      final className = json['className'] as String?;
+      appLogger.w(
+        'Missing assetPath for item: ${name ?? 'Unknown'} '
+        '(class: ${className ?? 'Unknown'})',
+      );
+    }
     return GameItem(
       className: json['className'] as String,
       name: json['name'] as String,
@@ -58,6 +72,7 @@ class GameItem {
       form: _parseForm(json['form'] as String?),
       fluidColor: json['fluidColor'] as String? ?? '#ffffff',
       alienItem: json['alienItem'] as bool? ?? false,
+      assetPath: assetPath,
     );
   }
 
@@ -91,7 +106,8 @@ class RecipeItem {
     return 'https://satisfactory.wiki.gg/wiki/$slug';
   }
 
-  String get imagePath => 'assets/images/${name.replaceAll(' ', '_')}.webp';
+  String get imagePath =>
+      itemData?.imagePath ?? 'assets/images/${name.replaceAll(' ', '_')}.webp';
 
   bool get isFluid => itemData?.isFluid ?? false;
 
