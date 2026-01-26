@@ -33,6 +33,20 @@ class Recipe {
   bool get isBuildRecipe => inBuildGun;
   bool get isAlternate => alternate;
 
+  RecipeItem? productFor(String className) {
+    for (final product in products) {
+      if (product.className == className) return product;
+    }
+    return null;
+  }
+
+  double outputPerMinuteFor(String className) {
+    if (duration <= 0) return 0;
+    final product = productFor(className);
+    if (product == null) return 0;
+    return (60 / duration) * product.amount;
+  }
+
   String get primaryProductName =>
       products.isNotEmpty ? products.first.name : name;
 

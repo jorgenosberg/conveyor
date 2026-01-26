@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../data/game_data_repository.dart';
+import '../data/production_planner.dart';
 import '../models/models.dart';
 
 final gameDataRepositoryProvider = Provider<GameDataRepository>((ref) {
@@ -35,4 +36,9 @@ final buildRecipesProvider = Provider<List<Recipe>>((ref) {
 final allItemsProvider = Provider<Map<String, GameItem>>((ref) {
   final repository = ref.watch(gameDataRepositoryProvider);
   return repository.items;
+});
+
+final productionPlannerProvider = Provider<ProductionPlanner>((ref) {
+  final recipes = ref.watch(allRecipesProvider);
+  return ProductionPlanner(recipes);
 });
