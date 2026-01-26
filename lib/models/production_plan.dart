@@ -7,6 +7,7 @@ class ProductionPlanNode {
   final double ratePerMinute;
   final double machines;
   final List<ProductionPlanNode> inputs;
+  final bool isTruncated;
 
   const ProductionPlanNode({
     required this.item,
@@ -14,6 +15,7 @@ class ProductionPlanNode {
     required this.ratePerMinute,
     required this.machines,
     required this.inputs,
+    this.isTruncated = false,
   });
 
   bool get isRaw => recipe == null;

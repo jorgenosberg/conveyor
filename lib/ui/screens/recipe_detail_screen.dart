@@ -526,6 +526,8 @@ class _ProductionCalculator extends ConsumerStatefulWidget {
 class _ProductionCalculatorState extends ConsumerState<_ProductionCalculator> {
   late Recipe _selectedRecipe;
   late TextEditingController _rateController;
+  ProductionChainViewMode _viewMode = ProductionChainViewMode.list;
+  int _maxDepth = 0;
 
   @override
   void initState() {
@@ -566,6 +568,7 @@ class _ProductionCalculatorState extends ConsumerState<_ProductionCalculator> {
             recipe: _selectedRecipe,
             targetClassName: widget.targetClassName,
             targetRatePerMinute: targetRate,
+            maxDepth: _maxDepth,
           )
         : null;
 
@@ -600,6 +603,62 @@ class _ProductionCalculatorState extends ConsumerState<_ProductionCalculator> {
           ),
           onChanged: (_) => setState(() {}),
         ),
+        const SizedBox(height: 12),
+        Wrap(
+          spacing: 12,
+          runSpacing: 12,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            SegmentedButton<ProductionChainViewMode>(
+              segments: const [
+                ButtonSegment(
+                  value: ProductionChainViewMode.list,
+                  label: Text('List'),
+                  icon: Icon(Icons.list),
+                ),
+                ButtonSegment(
+                  value: ProductionChainViewMode.graph,
+                  label: Text('Graph'),
+                  icon: Icon(Icons.device_hub),
+                ),
+              ],
+              selected: {_viewMode},
+              onSelectionChanged: (value) {
+                setState(() {
+                  _viewMode = value.first;
+                });
+              },
+            ),
+            SizedBox(
+              width: 200,
+              child: DropdownButtonFormField<int>(
+                value: _maxDepth,
+                decoration: const InputDecoration(labelText: 'Depth'),
+                items: const [
+                  DropdownMenuItem(value: 0, child: Text('Full')),
+                  DropdownMenuItem(value: 1, child: Text('Depth 1')),
+                  DropdownMenuItem(value: 2, child: Text('Depth 2')),
+                  DropdownMenuItem(value: 3, child: Text('Depth 3')),
+                  DropdownMenuItem(value: 4, child: Text('Depth 4')),
+                  DropdownMenuItem(value: 5, child: Text('Depth 5')),
+                ],
+                onChanged: (value) {
+                  if (value == null) return;
+                  setState(() {
+                    _maxDepth = value;
+                  });
+                },
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        Text(
+          'Depth limits how many input steps are shown. Deeper items are treated as supplied.',
+          style: theme.textTheme.bodySmall?.copyWith(
+            color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
+          ),
+        ),
         const SizedBox(height: 16),
         if (plan == null)
           Text(
@@ -609,7 +668,10 @@ class _ProductionCalculatorState extends ConsumerState<_ProductionCalculator> {
             ),
           )
         else ...[
-          _ProductionPlanView(plan: plan),
+          if (_viewMode == ProductionChainViewMode.list)
+            _ProductionPlanView(plan: plan)
+          else
+            _ProductionGraphView(plan: plan),
           const SizedBox(height: 16),
           _ProductionSummary(plan: plan),
         ],
@@ -623,6 +685,8 @@ class _ProductionCalculatorState extends ConsumerState<_ProductionCalculator> {
     return recipe.itemsPerMinute;
   }
 }
+
+enum ProductionChainViewMode { list, graph }
 
 class _ProductionPlanView extends StatelessWidget {
   final ProductionPlanNode plan;
@@ -646,6 +710,176 @@ class _ProductionPlanView extends StatelessWidget {
       children: entries
           .map((entry) => _PlanRow(node: entry.node, depth: entry.depth))
           .toList(),
+    );
+  }
+}
+
+class _ProductionGraphView extends StatelessWidget {
+  final ProductionPlanNode plan;
+
+  const _ProductionGraphView({required this.plan});
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: _GraphNode(node: plan),
+    );
+  }
+}
+
+class _GraphNode extends StatelessWidget {
+  final ProductionPlanNode node;
+
+  const _GraphNode({required this.node});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final muted = theme.colorScheme.onSurface.withValues(alpha: 0.6);
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        _GraphItemNode(node: node),
+        if (!node.isRaw) ...[
+          const SizedBox(height: 6),
+          Icon(Icons.south, size: 16, color: muted),
+          const SizedBox(height: 6),
+          _GraphMachineNode(node: node),
+        ],
+        if (node.isTruncated) ...[
+          const SizedBox(height: 6),
+          _GraphHint(label: 'Depth limit reached'),
+        ],
+        if (node.inputs.isNotEmpty) ...[
+          const SizedBox(height: 12),
+          Icon(Icons.call_split, size: 18, color: muted),
+          const SizedBox(height: 8),
+          Wrap(
+            spacing: 16,
+            runSpacing: 16,
+            alignment: WrapAlignment.center,
+            children: [
+              for (final child in node.inputs) _GraphNode(node: child),
+            ],
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+class _GraphItemNode extends StatelessWidget {
+  final ProductionPlanNode node;
+
+  const _GraphItemNode({required this.node});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return SizedBox(
+      width: 220,
+      child: Card(
+        margin: EdgeInsets.zero,
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Row(
+            children: [
+              ItemImage(item: node.item, size: 28),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      node.item.name,
+                      style: theme.textTheme.bodyMedium?.copyWith(
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    Text(
+                      node.isRaw
+                          ? 'Raw resource • ${formatNumber(node.ratePerMinute)}/min'
+                          : '${formatNumber(node.ratePerMinute)}/min',
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: theme.colorScheme.onSurface.withValues(
+                          alpha: 0.6,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _GraphMachineNode extends StatelessWidget {
+  final ProductionPlanNode node;
+
+  const _GraphMachineNode({required this.node});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return SizedBox(
+      width: 200,
+      child: Container(
+        decoration: BoxDecoration(
+          color: AppColors.surface,
+          borderRadius: BorderRadius.circular(4),
+          border: Border.all(color: AppColors.borderLight),
+        ),
+        padding: const EdgeInsets.all(10),
+        child: Column(
+          children: [
+            Text(
+              node.machineLabel,
+              textAlign: TextAlign.center,
+              style: theme.textTheme.bodySmall?.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              '${formatNumber(node.machines)} machine${node.machines == 1 ? '' : 's'}',
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _GraphHint extends StatelessWidget {
+  final String label;
+
+  const _GraphHint({required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(4),
+        border: Border.all(color: AppColors.borderLight),
+      ),
+      child: Text(
+        label,
+        style: theme.textTheme.bodySmall?.copyWith(
+          color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
+        ),
+      ),
     );
   }
 }
@@ -692,6 +926,14 @@ class _PlanRow extends StatelessWidget {
                     color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                   ),
                 ),
+                if (node.isTruncated)
+                  Text(
+                    'Depth limit reached',
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
               ],
             ),
           ),

@@ -26,12 +26,15 @@ class ProductionPlanner {
     required Recipe recipe,
     required String targetClassName,
     required double targetRatePerMinute,
+    int maxDepth = 0,
   }) {
     return _buildNode(
       recipe: recipe,
       targetClassName: targetClassName,
       targetRatePerMinute: targetRatePerMinute,
       visiting: <String>{targetClassName},
+      depth: 0,
+      maxDepth: maxDepth,
     );
   }
 
@@ -62,6 +65,8 @@ class ProductionPlanner {
     required String targetClassName,
     required double targetRatePerMinute,
     required Set<String> visiting,
+    required int depth,
+    required int maxDepth,
   }) {
     final product =
         recipe.productFor(targetClassName) ?? recipe.products.firstOrNull;
@@ -72,6 +77,7 @@ class ProductionPlanner {
         ratePerMinute: targetRatePerMinute,
         machines: 0,
         inputs: const [],
+        isTruncated: false,
       );
     }
 
@@ -80,6 +86,17 @@ class ProductionPlanner {
     final machines = perMachineOutput > 0
         ? targetRatePerMinute / perMachineOutput
         : 0.0;
+
+    if (maxDepth > 0 && depth >= maxDepth) {
+      return ProductionPlanNode(
+        item: product,
+        recipe: recipe,
+        ratePerMinute: targetRatePerMinute,
+        machines: machines,
+        inputs: const [],
+        isTruncated: true,
+      );
+    }
 
     final inputs = <ProductionPlanNode>[];
     for (final ingredient in recipe.ingredients) {
@@ -120,6 +137,8 @@ class ProductionPlanner {
           targetClassName: ingredient.className,
           targetRatePerMinute: requiredRate,
           visiting: {...visiting, ingredient.className},
+          depth: depth + 1,
+          maxDepth: maxDepth,
         ),
       );
     }
