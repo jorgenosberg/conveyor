@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../models/models.dart';
+import '../theme/app_theme.dart';
 import 'item_image.dart';
 
 class RecipeCard extends StatelessWidget {
@@ -17,7 +18,7 @@ class RecipeCard extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(4),
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
@@ -44,13 +45,13 @@ class RecipeCard extends StatelessWidget {
                         vertical: 4,
                       ),
                       decoration: BoxDecoration(
-                        color: theme.colorScheme.primary.withValues(alpha: 0.2),
-                        borderRadius: BorderRadius.circular(4),
+                        color: AppColors.primary,
+                        borderRadius: BorderRadius.circular(2),
                       ),
-                      child: Text(
+                      child: const Text(
                         'ALT',
                         style: TextStyle(
-                          color: theme.colorScheme.primary,
+                          color: Colors.black,
                           fontSize: 10,
                           fontWeight: FontWeight.bold,
                         ),

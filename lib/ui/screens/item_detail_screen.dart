@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../providers/providers.dart';
+import '../theme/app_theme.dart';
 import '../widgets/header_background.dart';
 import '../widgets/item_image.dart';
 import '../widgets/recipe_flow_card.dart';
@@ -63,8 +64,8 @@ class _ItemDetailScreenState extends ConsumerState<ItemDetailScreen> {
             pinned: true,
             expandedHeight: description.isNotEmpty ? 300 : 260,
             title: const SizedBox.shrink(),
-            backgroundColor: Color(0xFF1A1A2E),
-            surfaceTintColor: Color(0xFF1A1A2E),
+            backgroundColor: AppColors.background,
+            surfaceTintColor: AppColors.background,
             elevation: 0,
             flexibleSpace: FlexibleSpaceBar(
               background: HeaderBackground(

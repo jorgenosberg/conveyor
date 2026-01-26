@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/models.dart';
 import '../../providers/providers.dart';
+import '../theme/app_theme.dart';
 import '../widgets/header_background.dart';
 import '../widgets/item_image.dart';
 
@@ -54,8 +55,8 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
             pinned: true,
             expandedHeight: 300,
             title: const SizedBox.shrink(),
-            backgroundColor: Color(0xFF1A1A2E),
-            surfaceTintColor: Color(0xFF1A1A2E),
+            backgroundColor: AppColors.background,
+            surfaceTintColor: AppColors.background,
             elevation: 0,
             actions: [
               IconButton(
@@ -180,13 +181,13 @@ class _RecipeHeader extends StatelessWidget {
                     vertical: 4,
                   ),
                   decoration: BoxDecoration(
-                    color: theme.colorScheme.surface.withValues(alpha: 0.4),
-                    borderRadius: BorderRadius.circular(4),
+                    color: AppColors.primary,
+                    borderRadius: BorderRadius.circular(2),
                   ),
-                  child: Text(
+                  child: const Text(
                     'ALTERNATE RECIPE',
                     style: TextStyle(
-                      color: theme.colorScheme.onSurface,
+                      color: Colors.black,
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
                     ),
@@ -317,20 +318,18 @@ class _AlternateRecipeFlowCard extends StatelessWidget {
     final theme = Theme.of(context);
     final background = isSelected
         ? theme.colorScheme.primary.withValues(alpha: 0.08)
-        : theme.colorScheme.surface;
+        : AppColors.surfaceLight;
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(4),
         child: Container(
           decoration: BoxDecoration(
             color: background,
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(
-              color: theme.colorScheme.onSurface.withValues(alpha: 0.08),
-            ),
+            borderRadius: BorderRadius.circular(4),
+            border: Border.all(color: AppColors.borderLight),
           ),
           padding: const EdgeInsets.all(12),
           child: Column(
@@ -464,9 +463,6 @@ class _ItemAmountTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final tileColor = theme.colorScheme.surface.withValues(alpha: 0.6);
-    final badgeColor = theme.colorScheme.onSurface.withValues(alpha: 0.6);
-    final badgeTextColor = theme.colorScheme.surface;
 
     return Stack(
       clipBehavior: Clip.none,
@@ -475,11 +471,9 @@ class _ItemAmountTile extends StatelessWidget {
           width: 48,
           height: 48,
           decoration: BoxDecoration(
-            color: tileColor,
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(
-              color: theme.colorScheme.onSurface.withValues(alpha: 0.08),
-            ),
+            color: AppColors.surface,
+            borderRadius: BorderRadius.circular(4),
+            border: Border.all(color: AppColors.borderLight),
           ),
           child: Padding(
             padding: const EdgeInsets.all(6),
@@ -492,13 +486,13 @@ class _ItemAmountTile extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
             decoration: BoxDecoration(
-              color: badgeColor,
-              borderRadius: BorderRadius.circular(10),
+              color: AppColors.primary,
+              borderRadius: BorderRadius.circular(2),
             ),
             child: Text(
               item.displayAmount,
               style: theme.textTheme.labelSmall?.copyWith(
-                color: badgeTextColor,
+                color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),

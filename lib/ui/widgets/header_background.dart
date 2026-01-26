@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import '../theme/app_theme.dart';
+
 const List<String> kHeaderBackgrounds = [
   'assets/ui/Abyss_Cliffs.webp',
   'assets/ui/Blue_Crater.webp',
@@ -76,9 +78,9 @@ class HeaderBackground extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color(0xFF1A1A2E).withValues(alpha: 0.05),
-                Color(0xFF1A1A2E).withValues(alpha: 0.35),
-                Color(0xFF1A1A2E),
+                AppColors.background.withValues(alpha: 0.05),
+                AppColors.background.withValues(alpha: 0.35),
+                AppColors.background,
               ],
               stops: const [0.0, 0.55, 1.0],
             ),
