@@ -110,7 +110,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Round_Concrete_Beam_(Concrete).webp"
+      "assetPath": "assets/images/Round_Concrete_Beam.webp"
     }
   ],
   "Desc_Beam_H_C": [
@@ -2003,7 +2003,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_(1m).webp"
+      "assetPath": "assets/images/Ramp_4m_(FICSIT).webp"
     }
   ],
   "Desc_Ramp_8x2_01_C": [
@@ -2022,7 +2022,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_(2m).webp"
+      "assetPath": "assets/images/Ramp_4m_(FICSIT).webp"
     }
   ],
   "Desc_Ramp_8x4_01_C": [
@@ -2041,7 +2041,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_(4m).webp"
+      "assetPath": "assets/images/Ramp_4m_(FICSIT).webp"
     }
   ],
   "Desc_Ramp_8x4_Inverted_01_C": [
@@ -2060,7 +2060,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(4m).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(FICSIT).webp"
     }
   ],
   "Desc_Ramp_8x8x8_C": [
@@ -2117,7 +2117,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_1m_(FICSIT).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(FICSIT).webp"
     }
   ],
   "Desc_Ramp_Diagonal_8x2_01_C": [
@@ -2155,7 +2155,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_2m_(FICSIT).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(FICSIT).webp"
     }
   ],
   "Desc_Ramp_Diagonal_8x4_01_C": [
@@ -2250,7 +2250,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(1m).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(FICSIT).webp"
     }
   ],
   "Desc_RampInverted_8x1_Corner_01_C": [
@@ -2269,7 +2269,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "/assets/images/Inv._Up_Corner_1m_(FICSIT).webp"
+      "assetPath": "/assets/images/Inv._Up_Corner_4m_(FICSIT).webp"
     }
   ],
   "Desc_RampInverted_8x1_Corner_02_C": [
@@ -2307,7 +2307,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(2m).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(FICSIT).webp"
     }
   ],
   "Desc_RampInverted_8x2_Corner_01_C": [
@@ -2326,7 +2326,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(2m).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(FICSIT).webp"
     }
   ],
   "Desc_RampInverted_8x2_Corner_02_C": [
@@ -2364,7 +2364,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(4m).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(FICSIT).webp"
     }
   ],
   "Desc_RampInverted_8x4_Corner_02_C": [
@@ -2535,7 +2535,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Side_Door_Wall.webp"
+      "assetPath": "assets/images/Side_Door_Wall_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Gate_8x4_01_C": [
@@ -2592,7 +2592,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Corner_Wall_4m_(FICSIT).webp"
+      "assetPath": "assets/images/Tilted_Corner_Wall_8m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x4_Corner_02_C": [
@@ -2611,7 +2611,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Concave_Wall_(4m).webp"
+      "assetPath": "assets/images/Tilted_Concave_Wall_8m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x8_Corner_01_C": [
@@ -2630,7 +2630,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Corner_Wall_(8m).webp"
+      "assetPath": "assets/images/Tilted_Corner_Wall_8m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x8_Corner_02_C": [
@@ -2649,7 +2649,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Concave_Wall_(8m).webp"
+      "assetPath": "assets/images/Tilted_Concave_Wall_8m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_Angular_8x4_C": [
@@ -2668,7 +2668,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Wall_(4m).webp"
+      "assetPath": "assets/images/Tilted_Wall_8m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_Angular_8x8_C": [
@@ -2687,7 +2687,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Wall_(8m).webp"
+      "assetPath": "assets/images/Tilted_Wall_8m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x1_FlipTris_C": [
@@ -2706,7 +2706,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(1m).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x2_FlipTris_C": [
@@ -2725,7 +2725,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(2m).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x4_FlipTris_C": [
@@ -2744,7 +2744,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(4m).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x8_FlipTris_C": [
@@ -2763,7 +2763,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(8m).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x1_Tris_C": [
@@ -2782,7 +2782,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(1m).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x2_Tris_C": [
@@ -2801,7 +2801,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(2m).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x4_Tris_C": [
@@ -2820,7 +2820,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(4m).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Orange_8x8_Tris_C": [
@@ -2839,7 +2839,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(8m).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Window_8x4_01_C": [
@@ -2858,7 +2858,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Single_Window_(Window).webp"
+      "assetPath": "assets/images/Single_Window.webp"
     }
   ],
   "Desc_Wall_Window_8x4_02_C": [
@@ -2896,7 +2896,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Panel_Window_(Window).webp"
+      "assetPath": "assets/images/Panel_Window_(FICSIT).webp"
     }
   ],
   "Desc_Wall_Window_8x4_04_C": [
@@ -3048,7 +3048,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(1m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Concrete).webp"
     }
   ],
   "Desc_InvertedRamp_Concrete_8x2_C": [
@@ -3067,7 +3067,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(2m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Concrete).webp"
     }
   ],
   "Desc_InvertedRamp_Concrete_8x4_C": [
@@ -3086,7 +3086,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(4m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Concrete).webp"
     }
   ],
   "Desc_InvertedRamp_DCorner_Concrete_8x1_C": [
@@ -3162,7 +3162,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(1m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Concrete).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Concrete_8x2_C": [
@@ -3181,7 +3181,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(2m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Concrete).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Concrete_8x4_C": [
@@ -3200,7 +3200,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(4m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Concrete).webp"
     }
   ],
   "Desc_QuarterPipe_Concrete_8x4_C": [
@@ -3371,7 +3371,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(1m)_(Concrete).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Concrete).webp"
     }
   ],
   "Desc_Ramp_UpCorner_Concrete_8x2_C": [
@@ -3390,7 +3390,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(2m)_(Concrete).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Concrete).webp"
     }
   ],
   "Desc_Ramp_UpCorner_Concrete_8x4_C": [
@@ -3409,7 +3409,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(4m)_(Concrete).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Concrete).webp"
     }
   ],
   "Desc_RampDouble_Concrete_8x1_C": [
@@ -3472,7 +3472,7 @@
   "Desc_DownQuarterPipe_Grip_8x4_C": [
     {
       "className": "Desc_DownQuarterPipe_Grip_8x4_C",
-      "name": "Inverted Quarter Pipe (Grip)",
+      "name": "Inverted Quarter Pipe (Grip Metal)",
       "description": "Provides an optional factory look that is smoother and offers possibilities for recreational activities. <br>Still utilizes the standard Foundation building grid for improved building placement.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3485,13 +3485,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Quarter_Pipe_(Grip).webp"
+      "assetPath": "assets/images/Inverted_Quarter_Pipe_(Grip_Metal).webp"
     }
   ],
   "Desc_DownQuarterPipeInCorner_Grip_8x4_C": [
     {
       "className": "Desc_DownQuarterPipeInCorner_Grip_8x4_C",
-      "name": "Inverted Inner Corner Quarter Pipe (Grip)",
+      "name": "Inverted Inner Corner Quarter Pipe (Grip Metal)",
       "description": "Provides an optional factory look that is smoother and offers possibilities for recreational activities. <br>Still utilizes the standard Foundation building grid for improved building placement.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3504,13 +3504,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Inner_Corner_Quarter_Pipe_(Grip).webp"
+      "assetPath": "assets/images/Inverted_Inner_Corner_Quarter_Pipe_(Grip_Metal).webp"
     }
   ],
   "Desc_DownQuarterPipeOutCorner_Grip_8x4_C": [
     {
       "className": "Desc_DownQuarterPipeOutCorner_Grip_8x4_C",
-      "name": "Inverted Outer Corner Quarter Pipe (Grip)",
+      "name": "Inverted Outer Corner Quarter Pipe (Grip Metal)",
       "description": "Provides an optional factory look that is smoother and offers possibilities for recreational activities. <br>Still utilizes the standard Foundation building grid for improved building placement.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3523,7 +3523,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Outer_Corner_Quarter_Pipe_(Grip).webp"
+      "assetPath": "assets/images/Inverted_Outer_Corner_Quarter_Pipe_(Grip_Metal).webp"
     }
   ],
   "Desc_Foundation_Metal_8x1_C": [
@@ -3643,7 +3643,7 @@
   "Desc_InvertedRamp_Metal_8x1_C": [
     {
       "className": "Desc_InvertedRamp_Metal_8x1_C",
-      "name": "Inverted Ramp (1m) (Metal)",
+      "name": "Inverted Ramp (1m) (Grip Metal)",
       "description": "Provides a flat floor to build your factory on.<br>Buildings on top of the Foundation snap to a grid, making it easier to line them up with each other.<br>Size: 8m x 1m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3656,13 +3656,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(1m)_(Metal).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Grip_Metal).webp"
     }
   ],
   "Desc_InvertedRamp_Metal_8x2_C": [
     {
       "className": "Desc_InvertedRamp_Metal_8x2_C",
-      "name": "Inverted Ramp (2m) (Metal)",
+      "name": "Inverted Ramp (2m) (Grip Metal)",
       "description": "Provides a flat floor to build your factory on.<br>Buildings on top of the Foundation snap to a grid, making it easier to line them up with each other.<br>Size: 8m x 2m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3675,7 +3675,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(2m)_(Metal).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Grip_Metal).webp"
     }
   ],
   "Desc_InvertedRamp_Metal_8x4_C": [
@@ -3694,13 +3694,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(4m)_(Metal).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Grip_Metal).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Metal_8x1_C": [
     {
       "className": "Desc_InvertedRamp_UCorner_Metal_8x1_C",
-      "name": "Inverted Up Corner (1m) (Metal)",
+      "name": "Inverted Up Corner (1m) (Grip Metal)",
       "description": "Provides a flat floor to build your factory on.<br>Buildings on top of the Foundation snap to a grid, making it easier to line them up with each other.<br>Size: 8m x 1m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3713,13 +3713,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(1m)_(Metal).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Grip_Metal).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Metal_8x2_C": [
     {
       "className": "Desc_InvertedRamp_UCorner_Metal_8x2_C",
-      "name": "Inverted Up Corner (2m) (Metal)",
+      "name": "Inverted Up Corner (2m) (Grip Metal)",
       "description": "Provides a flat floor to build your factory on.<br>Buildings on top of the Foundation snap to a grid, making it easier to line them up with each other.<br>Size: 8m x 2m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3732,7 +3732,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(2m)_(Metal).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Grip_Metal).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Metal_8x4_C": [
@@ -3751,13 +3751,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(4m)_(Metal).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Grip_Metal).webp"
     }
   ],
   "Desc_QuarterPipe_Grip_8x4_C": [
     {
       "className": "Desc_QuarterPipe_Grip_8x4_C",
-      "name": "Quarter Pipe (Grip)",
+      "name": "Quarter Pipe (Grip Metal)",
       "description": "Provides an optional factory look that is smoother and offers possibilities for recreational activities. <br>Still utilizes the standard Foundation building grid for improved building placement.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3770,13 +3770,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Quarter_Pipe_(Grip).webp"
+      "assetPath": "assets/images/Quarter_Pipe_(Grip_Metal).webp"
     }
   ],
   "Desc_QuarterPipeInCorner_Grip_8x4_C": [
     {
       "className": "Desc_QuarterPipeInCorner_Grip_8x4_C",
-      "name": "Inner Corner Quarter Pipe (Grip)",
+      "name": "Inner Corner Quarter Pipe (Grip Metal)",
       "description": "Provides an optional factory look that is smoother and offers possibilities for recreational activities. <br>Still utilizes the standard Foundation building grid for improved building placement.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3789,13 +3789,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inner_Corner_Quarter_Pipe_(Grip).webp"
+      "assetPath": "assets/images/Inner_Corner_Quarter_Pipe_(Grip_Metal).webp"
     }
   ],
   "Desc_QuarterPipeOutCorner_Grip_8x4_C": [
     {
       "className": "Desc_QuarterPipeOutCorner_Grip_8x4_C",
-      "name": "Outer Corner Quarter Pipe (Grip)",
+      "name": "Outer Corner Quarter Pipe (Grip Metal)",
       "description": "Provides an optional factory look that is smoother and offers possibilities for recreational activities. <br>Still utilizes the standard Foundation building grid for improved building placement.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Grip Metal Foundation Material",
       "powerUsage": 0,
@@ -3808,7 +3808,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Outer_Corner_Quarter_Pipe_(Grip).webp"
+      "assetPath": "assets/images/Outer_Corner_Quarter_Pipe_(Grip_Metal).webp"
     }
   ],
   "Desc_Ramp_DownCorner_Metal_8x1_C": [
@@ -3928,7 +3928,7 @@
   "Desc_Ramp_UpCorner_Metal_8x1_C": [
     {
       "className": "Desc_Ramp_UpCorner_Metal_8x1_C",
-      "name": "Up Corner Ramp (1m) (Metal)",
+      "name": "Up Corner Ramp (1m) (Grip Metal)",
       "description": "Snaps to Foundations and makes it easier to get onto them.<br>Buildings on top of the Ramp snap to a grid, making it easier to line them up with each other.<br>Size: 8m x 1m",
       "unlockedBy": "[[AWESOME Shop]] - Corner Ramp Pack",
       "powerUsage": 0,
@@ -3941,13 +3941,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(1m)_(Metal).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Grip_Metal).webp"
     }
   ],
   "Desc_Ramp_UpCorner_Metal_8x2_C": [
     {
       "className": "Desc_Ramp_UpCorner_Metal_8x2_C",
-      "name": "Up Corner Ramp (2m) (Metal)",
+      "name": "Up Corner Ramp (2m) (Grip Metal)",
       "description": "Snaps to Foundations and makes it easier to get onto them.<br>Buildings on top of the Ramp snap to a grid, making it easier to line them up with each other.<br>Size: 8m x 2m",
       "unlockedBy": "[[AWESOME Shop]] - Corner Ramp Pack",
       "powerUsage": 0,
@@ -3960,13 +3960,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(2m)_(Metal).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Grip_Metal).webp"
     }
   ],
   "Desc_Ramp_UpCorner_Metal_8x4_C": [
     {
       "className": "Desc_Ramp_UpCorner_Metal_8x4_C",
-      "name": "Up Corner Ramp (4m) (Metal)",
+      "name": "Up Corner Ramp (4m) (Grip Metal)",
       "description": "Snaps to Foundations and makes it easier to get onto them.<br>Buildings on top of the Ramp snap to a grid, making it easier to line them up with each other.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Corner Ramp Pack",
       "powerUsage": 0,
@@ -3979,7 +3979,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(4m)_(Metal).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Grip_Metal).webp"
     }
   ],
   "Desc_RampDouble_Metal_8x1_C": [
@@ -4004,7 +4004,7 @@
   "Desc_RampDouble_Metal_8x2_C": [
     {
       "className": "Desc_RampDouble_Metal_8x2_C",
-      "name": "Double Ramp (4m) (Metal)",
+      "name": "Double Ramp (4m) (Grip Metal)",
       "description": "Snaps to Foundations and makes it easier to get onto them.<br>Buildings on top of the Ramp snap to a grid, making it easier to line them up with each other.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Double Ramp Set",
       "powerUsage": 0,
@@ -4017,7 +4017,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Double_Ramp_8m_(Metal).webp"
+      "assetPath": "assets/images/Double_Ramp_8m_(Grip_Metal).webp"
     }
   ],
   "Desc_RampDouble_Metal_8x4_C": [
@@ -4055,7 +4055,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Quarter_Pipe_(Polished).webp"
+      "assetPath": "assets/images/Inverted_Quarter_Pipe_(Coated).webp"
     }
   ],
   "Desc_DownQuarterPipeInCorner_ConcretePolished_8x4_C": [
@@ -4074,7 +4074,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Inner_Corner_Quarter_Pipe_(Polished).webp"
+      "assetPath": "assets/images/Inverted_Inner_Corner_Quarter_Pipe_(Coated).webp"
     }
   ],
   "Desc_DownQuarterPipeOutCorner_ConcretePolished_8x4_C": [
@@ -4093,7 +4093,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Outer_Corner_Quarter_Pipe_(Polished).webp"
+      "assetPath": "assets/images/Inverted_Outer_Corner_Quarter_Pipe_(Coated).webp"
     }
   ],
   "Desc_Foundation_ConcretePolished_8x1_C": [
@@ -4188,7 +4188,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(1m)_(Polished).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Coated).webp"
     }
   ],
   "Desc_InvertedRamp_Polished_8x2_C": [
@@ -4207,7 +4207,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(2m)_(Polished).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Coated).webp"
     }
   ],
   "Desc_InvertedRamp_Polished_8x4_C": [
@@ -4226,7 +4226,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(4m)_(Polished).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Coated).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Polished_8x1_C": [
@@ -4245,7 +4245,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(1m)_(Polished).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Coated).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Polished_8x2_C": [
@@ -4264,7 +4264,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(2m)_(Polished).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Coated).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Polished_8x4_C": [
@@ -4283,7 +4283,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(4m)_(Polished).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Coated).webp"
     }
   ],
   "Desc_QuarterPipe_ConcretePolished_8x4_C": [
@@ -4302,7 +4302,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Quarter_Pipe_(Polished).webp"
+      "assetPath": "assets/images/Quarter_Pipe_(Coated).webp"
     }
   ],
   "Desc_QuarterPipeInCorner_ConcretePolished_8x4_C": [
@@ -4321,7 +4321,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inner_Corner_Quarter_Pipe_(Polished).webp"
+      "assetPath": "assets/images/Inner_Corner_Quarter_Pipe_(Coated).webp"
     }
   ],
   "Desc_QuarterPipeOutCorner_ConcretePolished_8x4_C": [
@@ -4340,7 +4340,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Outer_Corner_Quarter_Pipe_(Polished).webp"
+      "assetPath": "assets/images/Outer_Corner_Quarter_Pipe_(Coated).webp"
     }
   ],
   "Desc_Ramp_DownCorner_Polished_8x1_C": [
@@ -4473,7 +4473,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(1m)_(Polished).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Coated).webp"
     }
   ],
   "Desc_Ramp_UpCorner_Polished_8x2_C": [
@@ -4492,7 +4492,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(2m)_(Polished).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Coated).webp"
     }
   ],
   "Desc_Ramp_UpCorner_Polished_8x4_C": [
@@ -4511,7 +4511,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(4m)_(Polished).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Coated).webp"
     }
   ],
   "Desc_RampDouble_Polished_8x1_C": [
@@ -4701,7 +4701,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(1m)_(Asphalt).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Asphalt).webp"
     }
   ],
   "Desc_InvertedRamp_Asphalt_8x2_C": [
@@ -4720,7 +4720,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(2m)_(Asphalt).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Asphalt).webp"
     }
   ],
   "Desc_InvertedRamp_Asphalt_8x4_C": [
@@ -4739,7 +4739,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_(4m)_(Asphalt).webp"
+      "assetPath": "assets/images/Inv._Ramp_4m_(Asphalt).webp"
     }
   ],
   "Desc_InvertedRamp_DCorner_Asphalt_8x1_C": [
@@ -4815,7 +4815,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(1m)_(Asphalt).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Asphalt).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Asphalt_8x2_C": [
@@ -4834,7 +4834,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(2m)_(Asphalt).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Asphalt).webp"
     }
   ],
   "Desc_InvertedRamp_UCorner_Asphalt_8x4_C": [
@@ -4853,7 +4853,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Up_Corner_(4m)_(Asphalt).webp"
+      "assetPath": "assets/images/Inv._Up_Corner_4m_(Asphalt).webp"
     }
   ],
   "Desc_QuarterPipe_Asphalt_8x4_C": [
@@ -5043,7 +5043,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(1m)_(Asphalt).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Asphalt).webp"
     }
   ],
   "Desc_Ramp_UpCorner_Asphalt_8x2_C": [
@@ -5062,7 +5062,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(2m)_(Asphalt).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Asphalt).webp"
     }
   ],
   "Desc_Ramp_UpCorner_Asphalt_8x4_C": [
@@ -5081,7 +5081,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Up_Corner_Ramp_(4m)_(Asphalt).webp"
+      "assetPath": "assets/images/Up_Corner_Ramp_4m_(Asphalt).webp"
     }
   ],
   "Desc_RampDouble_Asphalt_8x1_C": [
@@ -5632,7 +5632,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Corner_Wall_(4m)_(Concrete).webp"
+      "assetPath": "assets/images/Tilted_Corner_Wall_8m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_8x4_Corner_2_C": [
@@ -5651,7 +5651,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Concave_Wall_(4m)_(Concrete).webp"
+      "assetPath": "assets/images/Tilted_Concave_Wall_8m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_8x4_Window_01_C": [
@@ -5746,7 +5746,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Corner_Wall_(8m)_(Concrete).webp"
+      "assetPath": "assets/images/Tilted_Corner_Wall_8m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_8x8_Corner_2_C": [
@@ -5765,7 +5765,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Concave_Wall_(8m)_(Concrete).webp"
+      "assetPath": "assets/images/Tilted_Concave_Wall_8m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_Angular_8x4_C": [
@@ -5784,7 +5784,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Wall_(4m)_(Concrete).webp"
+      "assetPath": "assets/images/Tilted_Wall_8m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_Angular_8x8_C": [
@@ -5803,7 +5803,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Wall_(8m)_(Concrete).webp"
+      "assetPath": "assets/images/Tilted_Wall_8m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_CDoor_8x4_C": [
@@ -5841,7 +5841,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(1m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_8x2_FlipTris_C": [
@@ -5860,7 +5860,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(2m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_8x4_FlipTris_C": [
@@ -5879,7 +5879,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(4m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_8x8_FlipTris_C": [
@@ -5898,7 +5898,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(8m)_(Concrete).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_Gate_8x4_C": [
@@ -5955,7 +5955,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(1m)_(Concrete).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_8x2_Tris_C": [
@@ -5974,7 +5974,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(2m)_(Concrete).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_8x4_Tris_C": [
@@ -5993,7 +5993,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(4m)_(Concrete).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(Concrete).webp"
     }
   ],
   "Desc_Wall_Concrete_8x8_Tris_C": [
@@ -6012,7 +6012,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(8m)_(Concrete).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(Concrete).webp"
     }
   ],
   "Desc_BigGarageDoor_16x8_Steel_C": [
@@ -6132,7 +6132,7 @@
   "Desc_Wall_Steel_8x4_Corner_01_C": [
     {
       "className": "Desc_Wall_Steel_8x4_Corner_01_C",
-      "name": "Tilted Corner Wall (4m) (Steel)",
+      "name": "Tilted Corner Wall (4m) (Grip Metal)",
       "description": "Snaps to Foundations and other Walls.<br>Useful for building multi-floor structures.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Steel Wall Material",
       "powerUsage": 0,
@@ -6145,13 +6145,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Corner_Wall_(4m)_(Steel).webp"
+      "assetPath": "assets/images/Tilted_Corner_Wall_8m_(Steel).webp"
     }
   ],
   "Desc_Wall_Steel_8x4_Corner_2_C": [
     {
       "className": "Desc_Wall_Steel_8x4_Corner_2_C",
-      "name": "Tilted Concave Wall (4m) (Steel)",
+      "name": "Tilted Concave Wall (4m) (Grip Metal)",
       "description": "Snaps to Foundations and other Walls.<br>Useful for building multi-floor structures.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Steel Wall Material",
       "powerUsage": 0,
@@ -6164,13 +6164,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Concave_Wall_(4m)_(Steel).webp"
+      "assetPath": "assets/images/Tilted_Concave_Wall_8m_(Steel).webp"
     }
   ],
   "Desc_Wall_Steel_8x8_Corner_01_C": [
     {
       "className": "Desc_Wall_Steel_8x8_Corner_01_C",
-      "name": "Tilted Corner Wall (8m) (Steel)",
+      "name": "Tilted Corner Wall (8m) (Grip Metal)",
       "description": "Snaps to Foundations and other Walls.<br>Useful for building multi-floor structures.<br>Size: 8m x 8m",
       "unlockedBy": "[[AWESOME Shop]] - Steel Wall Material",
       "powerUsage": 0,
@@ -6183,13 +6183,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Corner_Wall_(8m)_(Steel).webp"
+      "assetPath": "assets/images/Tilted_Corner_Wall_8m_(Steel).webp"
     }
   ],
   "Desc_Wall_Steel_8x8_Corner_2_C": [
     {
       "className": "Desc_Wall_Steel_8x8_Corner_2_C",
-      "name": "Tilted Concave Wall (8m) (Steel)",
+      "name": "Tilted Concave Wall (8m) (Grip Metal)",
       "description": "Snaps to Foundations and other Walls.<br>Useful for building multi-floor structures.<br>Size: 8m x 8m",
       "unlockedBy": "[[AWESOME Shop]] - Steel Wall Material",
       "powerUsage": 0,
@@ -6202,7 +6202,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Concave_Wall_(8m)_(Steel).webp"
+      "assetPath": "assets/images/Tilted_Concave_Wall_8m_(Steel).webp"
     }
   ],
   "Desc_SteelWall_8x1_C": [
@@ -6240,7 +6240,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(1m)_(Steel).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(Steel).webp"
     }
   ],
   "Desc_SteelWall_FlipTris_8x2_C": [
@@ -6259,7 +6259,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(2m)_(Steel).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(Steel).webp"
     }
   ],
   "Desc_SteelWall_FlipTris_8x4_C": [
@@ -6278,7 +6278,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(4m)_(Steel).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(Steel).webp"
     }
   ],
   "Desc_SteelWall_FlipTris_8x8_C": [
@@ -6297,7 +6297,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Inverted_Ramp_Wall_(8m)_(Steel).webp"
+      "assetPath": "assets/images/Inv._Ramp_Wall_4m_(Steel).webp"
     }
   ],
   "Desc_SteelWall_Tris_8x1_C": [
@@ -6316,7 +6316,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(1m)_(Steel).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(Steel).webp"
     }
   ],
   "Desc_SteelWall_Tris_8x2_C": [
@@ -6335,7 +6335,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(2m)_(Steel).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(Steel).webp"
     }
   ],
   "Desc_SteelWall_Tris_8x4_C": [
@@ -6354,7 +6354,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(4m)_(Steel).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(Steel).webp"
     }
   ],
   "Desc_SteelWall_Tris_8x8_C": [
@@ -6373,7 +6373,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Ramp_Wall_(8m)_(Steel).webp"
+      "assetPath": "assets/images/Ramp_Wall_4m_(Steel).webp"
     }
   ],
   "Desc_Wall_8x4_02_C": [
@@ -6493,7 +6493,7 @@
   "Desc_WallSet_Steel_Angular_8x4_C": [
     {
       "className": "Desc_WallSet_Steel_Angular_8x4_C",
-      "name": "Tilted Wall (4m) (Steel)",
+      "name": "Tilted Wall (4m) (Grip Metal)",
       "description": "Snaps to Foundations and other Walls.<br>Useful for building multi-floor structures.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Steel Wall Material",
       "powerUsage": 0,
@@ -6506,13 +6506,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Wall_(4m)_(Steel).webp"
+      "assetPath": "assets/images/Tilted_Wall_8m_(Steel).webp"
     }
   ],
   "Desc_WallSet_Steel_Angular_8x8_C": [
     {
       "className": "Desc_WallSet_Steel_Angular_8x8_C",
-      "name": "Tilted Wall (8m) (Steel)",
+      "name": "Tilted Wall (8m) (Grip Metal)",
       "description": "Snaps to Foundations and other Walls.<br>Useful for building multi-floor structures.<br>Size: 8m x 8m",
       "unlockedBy": "[[AWESOME Shop]] - Steel Wall Material",
       "powerUsage": 0,
@@ -6525,7 +6525,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tilted_Wall_(8m)_(Steel).webp"
+      "assetPath": "assets/images/Tilted_Wall_8m_(Steel).webp"
     }
   ],
   "Desc_Flat_Frame_01_C": [
@@ -6677,7 +6677,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Small_Metal_Pillar_(Metal).webp"
+      "assetPath": "assets/images/Small_Metal_Pillar.webp"
     }
   ],
   "Desc_PillarBase_Small_C": [
@@ -7095,7 +7095,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(1m).webp"
+      "assetPath": "assets/images/FICSIT_Roof_1m.webp"
     }
   ],
   "Desc_Roof_Orange_03_C": [
@@ -7114,7 +7114,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(2m).webp"
+      "assetPath": "assets/images/FICSIT_Roof_2m.webp"
     }
   ],
   "Desc_Roof_Orange_04_C": [
@@ -7133,7 +7133,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(4m).webp"
+      "assetPath": "assets/images/FICSIT_Roof_4m.webp"
     }
   ],
   "Desc_Roof_Orange_InCorner_01_C": [
@@ -7304,7 +7304,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(2m)_(Window).webp"
+      "assetPath": "assets/images/Glass_Roof_2m.webp"
     }
   ],
   "Desc_Roof_Window_04_C": [
@@ -7323,7 +7323,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(4m)_(Window).webp"
+      "assetPath": "assets/images/Glass_Roof_4m.webp"
     }
   ],
   "Desc_Roof_Window_InCorner_01_C": [
@@ -7462,7 +7462,7 @@
   "Desc_Roof_A_02_C": [
     {
       "className": "Desc_Roof_A_02_C",
-      "name": "Roof (1m)",
+      "name": "Roof (1m) (Metal)",
       "description": "Snaps to Foundations, Walls, and other Roofs.<br>Size: 8m x 1m",
       "unlockedBy": "[[AWESOME Shop]] - Metal Roof Material",
       "powerUsage": 0,
@@ -7475,13 +7475,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(1m).webp"
+      "assetPath": "assets/images/Metal_Roof_1m.webp"
     }
   ],
   "Desc_Roof_A_03_C": [
     {
       "className": "Desc_Roof_A_03_C",
-      "name": "Roof (2m)",
+      "name": "Roof (2m) (Metal)",
       "description": "Snaps to Foundations, Walls, and other Roofs.<br>Size: 8m x 2m",
       "unlockedBy": "[[AWESOME Shop]] - Metal Roof Material",
       "powerUsage": 0,
@@ -7494,13 +7494,13 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(2m).webp"
+      "assetPath": "assets/images/Metal_Roof_2m.webp"
     }
   ],
   "Desc_Roof_A_04_C": [
     {
       "className": "Desc_Roof_A_04_C",
-      "name": "Roof (4m)",
+      "name": "Roof (4m) (Metal)",
       "description": "Snaps to Foundations, Walls, and other Roofs.<br>Size: 8m x 4m",
       "unlockedBy": "[[AWESOME Shop]] - Metal Roof Material",
       "powerUsage": 0,
@@ -7513,7 +7513,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(4m).webp"
+      "assetPath": "assets/images/Metal_Roof_4m.webp"
     }
   ],
   "Desc_Roof_Metal_InCorner_01_C": [
@@ -7665,7 +7665,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(1m)_(Tar).webp"
+      "assetPath": "assets/images/Tar_Roof_1m.webp"
     }
   ],
   "Desc_Roof_Tar_03_C": [
@@ -7684,7 +7684,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(2m)_(Tar).webp"
+      "assetPath": "assets/images/Tar_Roof_2m.webp"
     }
   ],
   "Desc_Roof_Tar_04_C": [
@@ -7703,7 +7703,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Roof_(4m)_(Tar).webp"
+      "assetPath": "assets/images/Tar_Roof_4m.webp"
     }
   ],
   "Desc_Roof_Tar_InCorner_01_C": [
@@ -7950,7 +7950,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Label_Sign_(2m).webp"
+      "assetPath": "assets/images/Label_Sign_2m.webp"
     }
   ],
   "Desc_StandaloneWidgetSign_SmallVeryWide_C": [
@@ -7969,7 +7969,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Label_Sign_(4m).webp"
+      "assetPath": "assets/images/Label_Sign_4m.webp"
     }
   ],
   "Desc_StandaloneWidgetSign_SmallWide_C": [
@@ -7988,7 +7988,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Label_Sign_(3m).webp"
+      "assetPath": "assets/images/Label_Sign_3m.webp"
     }
   ],
   "Desc_StandaloneWidgetSign_Square_Tiny_C": [
@@ -8007,7 +8007,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Square_Sign_(0.5m).webp"
+      "assetPath": "assets/images/Square_Sign_0.5m.webp"
     }
   ],
   "Desc_FoundationPassthrough_Hypertube_C": [
@@ -8216,7 +8216,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Tarp_Construction_Fence_(Tar).webp"
+      "assetPath": "assets/images/Tarp_Construction_Fence.webp"
     }
   ],
   "Desc_Barrier_Low_01_C": [
@@ -8349,7 +8349,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Square_Sign_(2m).webp"
+      "assetPath": "assets/images/Square_Sign_2m.webp"
     }
   ],
   "Desc_StandaloneWidgetSign_Square_Small_C": [
@@ -8368,7 +8368,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Square_Sign_(1m).webp"
+      "assetPath": "assets/images/Square_Sign_1m.webp"
     }
   ],
   "Desc_ConveyorWallHole_C": [
@@ -8444,7 +8444,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Small_Concrete_Pillar_(Concrete).webp"
+      "assetPath": "assets/images/Small_Concrete_Pillar.webp"
     }
   ],
   "Desc_PillarMiddle_Concrete_C": [
@@ -8539,7 +8539,7 @@
       "isVehicle": false,
       "stable": true,
       "experimental": true,
-      "assetPath": "assets/images/Straight_Catwalk.webp"
+      "assetPath": "assets/images/Catwalk_Straight.webp"
     }
   ],
   "Desc_CatwalkT_C": [
