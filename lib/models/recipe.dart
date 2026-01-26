@@ -107,10 +107,7 @@ class Recipe {
         .replaceAll('BP_ItemDescriptor', '')
         .replaceAll('BP_EqDesc', '')
         .replaceAll('_C', '')
-        .replaceAllMapped(
-          RegExp(r'([a-z])([A-Z])'),
-          (m) => '${m[1]} ${m[2]}',
-        )
+        .replaceAllMapped(RegExp(r'([a-z])([A-Z])'), (m) => '${m[1]} ${m[2]}')
         .replaceAll('_', ' ')
         .trim();
   }

@@ -13,8 +13,9 @@ class GameDataRepository {
     if (_recipes != null) return;
 
     final itemsJson = await rootBundle.loadString('assets/data/items.json');
-    final buildingsJson =
-        await rootBundle.loadString('assets/data/buildings.json');
+    final buildingsJson = await rootBundle.loadString(
+      'assets/data/buildings.json',
+    );
     final recipesJson = await rootBundle.loadString('assets/data/recipes.json');
 
     _itemLookup = _parseItems(jsonDecode(itemsJson) as Map<String, dynamic>);
@@ -92,11 +93,13 @@ class GameDataRepository {
     for (final entry in json.entries) {
       final list = entry.value as List;
       for (final recipeJson in list) {
-        recipes.add(Recipe.fromJson(
-          recipeJson as Map<String, dynamic>,
-          itemLookup,
-          _resolveMachineName,
-        ));
+        recipes.add(
+          Recipe.fromJson(
+            recipeJson as Map<String, dynamic>,
+            itemLookup,
+            _resolveMachineName,
+          ),
+        );
       }
     }
     recipes.sort((a, b) => a.name.compareTo(b.name));
@@ -111,10 +114,7 @@ class GameDataRepository {
     return className
         .replaceAll('Desc_', '')
         .replaceAll('_C', '')
-        .replaceAllMapped(
-          RegExp(r'([a-z])([A-Z])'),
-          (m) => '${m[1]} ${m[2]}',
-        )
+        .replaceAllMapped(RegExp(r'([a-z])([A-Z])'), (m) => '${m[1]} ${m[2]}')
         .replaceAll('Mk1', '')
         .trim();
   }

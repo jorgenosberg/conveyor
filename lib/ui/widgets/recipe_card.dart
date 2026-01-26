@@ -7,11 +7,7 @@ class RecipeCard extends StatelessWidget {
   final Recipe recipe;
   final VoidCallback? onTap;
 
-  const RecipeCard({
-    super.key,
-    required this.recipe,
-    this.onTap,
-  });
+  const RecipeCard({super.key, required this.recipe, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -104,10 +100,12 @@ class RecipeCard extends StatelessWidget {
                       recipe.producedIn.isNotEmpty
                           ? recipe.producedIn.join(', ')
                           : recipe.inCraftBench
-                              ? 'Craft Bench'
-                              : 'Build Gun',
+                          ? 'Craft Bench'
+                          : 'Build Gun',
                       style: theme.textTheme.bodySmall?.copyWith(
-                        color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
+                        color: theme.colorScheme.onSurface.withValues(
+                          alpha: 0.6,
+                        ),
                       ),
                     ),
                   ),
@@ -156,28 +154,30 @@ class _ItemList extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 4),
-        ...items.map((item) => Padding(
-              padding: const EdgeInsets.only(bottom: 4),
-              child: Row(
-                children: [
-                  ItemImage(item: item, size: 20),
-                  const SizedBox(width: 6),
-                  Expanded(
-                    child: Text(
-                      item.name,
-                      style: theme.textTheme.bodySmall,
-                      overflow: TextOverflow.ellipsis,
-                    ),
+        ...items.map(
+          (item) => Padding(
+            padding: const EdgeInsets.only(bottom: 4),
+            child: Row(
+              children: [
+                ItemImage(item: item, size: 20),
+                const SizedBox(width: 6),
+                Expanded(
+                  child: Text(
+                    item.name,
+                    style: theme.textTheme.bodySmall,
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  Text(
-                    item.displayAmount,
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
+                ),
+                Text(
+                  item.displayAmount,
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    fontWeight: FontWeight.bold,
                   ),
-                ],
-              ),
-            )),
+                ),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../models/models.dart';
 import '../../providers/providers.dart';
 import '../widgets/header_background.dart';
 import '../widgets/item_image.dart';
@@ -11,10 +10,7 @@ import '../widgets/recipe_flow_card.dart';
 class ItemDetailScreen extends ConsumerStatefulWidget {
   final String itemClassName;
 
-  const ItemDetailScreen({
-    super.key,
-    required this.itemClassName,
-  });
+  const ItemDetailScreen({super.key, required this.itemClassName});
 
   @override
   ConsumerState<ItemDetailScreen> createState() => _ItemDetailScreenState();
@@ -45,17 +41,20 @@ class _ItemDetailScreenState extends ConsumerState<ItemDetailScreen> {
     final name = item?.name ?? widget.itemClassName;
     final description = item?.description ?? '';
 
-    final recipesForItem = recipes
-        .where((recipe) =>
-            recipe.products.any(
-                (product) => product.className == widget.itemClassName))
-        .toList()
-      ..sort((a, b) {
-        if (a.isAlternate == b.isAlternate) {
-          return a.name.compareTo(b.name);
-        }
-        return a.isAlternate ? 1 : -1;
-      });
+    final recipesForItem =
+        recipes
+            .where(
+              (recipe) => recipe.products.any(
+                (product) => product.className == widget.itemClassName,
+              ),
+            )
+            .toList()
+          ..sort((a, b) {
+            if (a.isAlternate == b.isAlternate) {
+              return a.name.compareTo(b.name);
+            }
+            return a.isAlternate ? 1 : -1;
+          });
 
     return Scaffold(
       body: CustomScrollView(
@@ -88,9 +87,9 @@ class _ItemDetailScreenState extends ConsumerState<ItemDetailScreen> {
                                       .headlineSmall
                                       ?.copyWith(
                                         fontWeight: FontWeight.bold,
-                                        color: Theme.of(context)
-                                            .colorScheme
-                                            .onSurface,
+                                        color: Theme.of(
+                                          context,
+                                        ).colorScheme.onSurface,
                                       ),
                                 ),
                                 if (description.isNotEmpty) ...[
@@ -115,9 +114,7 @@ class _ItemDetailScreenState extends ConsumerState<ItemDetailScreen> {
                       )
                     : Text(
                         name,
-                        style: Theme.of(context)
-                            .textTheme
-                            .headlineSmall
+                        style: Theme.of(context).textTheme.headlineSmall
                             ?.copyWith(
                               fontWeight: FontWeight.bold,
                               color: Theme.of(context).colorScheme.onSurface,
@@ -137,13 +134,11 @@ class _ItemDetailScreenState extends ConsumerState<ItemDetailScreen> {
                     child: recipesForItem.isEmpty
                         ? Text(
                             'No recipes found for this item.',
-                            style:
-                                Theme.of(context).textTheme.bodySmall?.copyWith(
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .onSurface
-                                          .withValues(alpha: 0.6),
-                                    ),
+                            style: Theme.of(context).textTheme.bodySmall
+                                ?.copyWith(
+                                  color: Theme.of(context).colorScheme.onSurface
+                                      .withValues(alpha: 0.6),
+                                ),
                           )
                         : Column(
                             children: [

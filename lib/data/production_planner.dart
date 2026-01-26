@@ -71,34 +71,40 @@ class ProductionPlanner {
       final requiredRate = perMachineInput * machines;
 
       if (visiting.contains(ingredient.className)) {
-        inputs.add(ProductionPlanNode(
-          item: ingredient,
-          recipe: null,
-          ratePerMinute: requiredRate,
-          machines: 0,
-          inputs: const [],
-        ));
+        inputs.add(
+          ProductionPlanNode(
+            item: ingredient,
+            recipe: null,
+            ratePerMinute: requiredRate,
+            machines: 0,
+            inputs: const [],
+          ),
+        );
         continue;
       }
 
       final nextRecipe = defaultRecipeFor(ingredient.className);
       if (nextRecipe == null) {
-        inputs.add(ProductionPlanNode(
-          item: ingredient,
-          recipe: null,
-          ratePerMinute: requiredRate,
-          machines: 0,
-          inputs: const [],
-        ));
+        inputs.add(
+          ProductionPlanNode(
+            item: ingredient,
+            recipe: null,
+            ratePerMinute: requiredRate,
+            machines: 0,
+            inputs: const [],
+          ),
+        );
         continue;
       }
 
-      inputs.add(_buildNode(
-        recipe: nextRecipe,
-        targetClassName: ingredient.className,
-        targetRatePerMinute: requiredRate,
-        visiting: {...visiting, ingredient.className},
-      ));
+      inputs.add(
+        _buildNode(
+          recipe: nextRecipe,
+          targetClassName: ingredient.className,
+          targetRatePerMinute: requiredRate,
+          visiting: {...visiting, ingredient.className},
+        ),
+      );
     }
 
     return ProductionPlanNode(
@@ -111,13 +117,11 @@ class ProductionPlanner {
   }
 
   RecipeItem _fallbackItem(String className, Recipe recipe) {
-    final existing =
-        recipe.products.firstWhere((item) => item.className == className,
-            orElse: () => RecipeItem(
-                  className: className,
-                  name: className,
-                  amount: 0,
-                ));
+    final existing = recipe.products.firstWhere(
+      (item) => item.className == className,
+      orElse: () =>
+          RecipeItem(className: className, name: className, amount: 0),
+    );
     return existing;
   }
 

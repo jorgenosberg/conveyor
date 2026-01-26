@@ -7,11 +7,7 @@ class ItemImage extends StatelessWidget {
   final RecipeItem item;
   final double size;
 
-  const ItemImage({
-    super.key,
-    required this.item,
-    this.size = 32,
-  });
+  const ItemImage({super.key, required this.item, this.size = 32});
 
   @override
   Widget build(BuildContext context) {
@@ -29,10 +25,7 @@ class ItemImage extends StatelessWidget {
             error: error,
             stackTrace: stackTrace,
           );
-          return _FallbackIcon(
-            item: item,
-            size: size,
-          );
+          return _FallbackIcon(item: item, size: size);
         },
       ),
     );
@@ -43,11 +36,7 @@ class GameItemImage extends StatelessWidget {
   final GameItem item;
   final double size;
 
-  const GameItemImage({
-    super.key,
-    required this.item,
-    this.size = 32,
-  });
+  const GameItemImage({super.key, required this.item, this.size = 32});
 
   @override
   Widget build(BuildContext context) {
@@ -65,10 +54,7 @@ class GameItemImage extends StatelessWidget {
             error: error,
             stackTrace: stackTrace,
           );
-          return _FallbackIconForGameItem(
-            item: item,
-            size: size,
-          );
+          return _FallbackIconForGameItem(item: item, size: size);
         },
       ),
     );

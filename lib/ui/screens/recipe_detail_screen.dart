@@ -11,14 +11,10 @@ import '../widgets/item_image.dart';
 class RecipeDetailScreen extends ConsumerStatefulWidget {
   final String recipeClassName;
 
-  const RecipeDetailScreen({
-    super.key,
-    required this.recipeClassName,
-  });
+  const RecipeDetailScreen({super.key, required this.recipeClassName});
 
   @override
-  ConsumerState<RecipeDetailScreen> createState() =>
-      _RecipeDetailScreenState();
+  ConsumerState<RecipeDetailScreen> createState() => _RecipeDetailScreenState();
 }
 
 class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
@@ -45,8 +41,9 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
       (r) => r.className == widget.recipeClassName,
       orElse: () => throw Exception('Recipe not found'),
     );
-    final targetProduct =
-        recipe.products.isNotEmpty ? recipe.products.first : null;
+    final targetProduct = recipe.products.isNotEmpty
+        ? recipe.products.first
+        : null;
     final targetClassName = targetProduct?.className ?? recipe.className;
     final recipesForItem = _recipesForItem(recipes, targetClassName);
 
@@ -123,7 +120,8 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
                     child: _ProductionCalculator(
                       initialRecipe: recipe,
                       targetClassName: targetClassName,
-                      targetName: targetProduct?.name ?? recipe.primaryProductName,
+                      targetName:
+                          targetProduct?.name ?? recipe.primaryProductName,
                       recipesForItem: recipesForItem,
                     ),
                   ),
@@ -138,8 +136,10 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
 
   List<Recipe> _recipesForItem(List<Recipe> recipes, String className) {
     final matches = recipes
-        .where((recipe) =>
-            recipe.products.any((product) => product.className == className))
+        .where(
+          (recipe) =>
+              recipe.products.any((product) => product.className == className),
+        )
         .toList();
     matches.sort((a, b) {
       if (a.isAlternate == b.isAlternate) {
@@ -175,7 +175,10 @@ class _RecipeHeader extends StatelessWidget {
               if (recipe.isAlternate)
                 Container(
                   margin: const EdgeInsets.only(bottom: 8),
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 4,
+                  ),
                   decoration: BoxDecoration(
                     color: theme.colorScheme.surface.withValues(alpha: 0.4),
                     borderRadius: BorderRadius.circular(4),
@@ -238,61 +241,63 @@ class _RecipeFlowCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context, constraints) {
-      final isCompact = constraints.maxWidth < 700;
-      return Card(
-        margin: EdgeInsets.zero,
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: isCompact
-              ? Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _FlowSection(
-                      title: 'Ingredients',
-                      items: recipe.ingredients,
-                      duration: recipe.duration,
-                    ),
-                    const Divider(height: 24),
-                    _FlowSection(
-                      title: 'Products',
-                      items: recipe.products,
-                      duration: recipe.duration,
-                    ),
-                    const Divider(height: 24),
-                    _ProductionInfo(recipe: recipe),
-                  ],
-                )
-              : IntrinsicHeight(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isCompact = constraints.maxWidth < 700;
+        return Card(
+          margin: EdgeInsets.zero,
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: isCompact
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Expanded(
-                        child: _FlowSection(
-                          title: 'Ingredients',
-                          items: recipe.ingredients,
-                          duration: recipe.duration,
-                        ),
+                      _FlowSection(
+                        title: 'Ingredients',
+                        items: recipe.ingredients,
+                        duration: recipe.duration,
                       ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: _FlowSection(
-                          title: 'Products',
-                          items: recipe.products,
-                          duration: recipe.duration,
-                        ),
+                      const Divider(height: 24),
+                      _FlowSection(
+                        title: 'Products',
+                        items: recipe.products,
+                        duration: recipe.duration,
                       ),
-                      const SizedBox(width: 16),
-                      SizedBox(
-                        width: 220,
-                        child: _ProductionInfo(recipe: recipe),
-                      ),
+                      const Divider(height: 24),
+                      _ProductionInfo(recipe: recipe),
                     ],
+                  )
+                : IntrinsicHeight(
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Expanded(
+                          child: _FlowSection(
+                            title: 'Ingredients',
+                            items: recipe.ingredients,
+                            duration: recipe.duration,
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: _FlowSection(
+                            title: 'Products',
+                            items: recipe.products,
+                            duration: recipe.duration,
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        SizedBox(
+                          width: 220,
+                          child: _ProductionInfo(recipe: recipe),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-        ),
-      );
-    });
+          ),
+        );
+      },
+    );
   }
 }
 
@@ -353,7 +358,11 @@ class _AlternateRecipeFlowCard extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                '${recipe.producedIn.isNotEmpty ? recipe.producedIn.join(', ') : recipe.inCraftBench ? 'Craft Bench' : 'Build Gun'} • ${recipe.duration}s • ${recipe.itemsPerMinute.toStringAsFixed(recipe.itemsPerMinute.truncateToDouble() == recipe.itemsPerMinute ? 0 : 2)}/min',
+                '${recipe.producedIn.isNotEmpty
+                    ? recipe.producedIn.join(', ')
+                    : recipe.inCraftBench
+                    ? 'Craft Bench'
+                    : 'Build Gun'} • ${recipe.duration}s • ${recipe.itemsPerMinute.toStringAsFixed(recipe.itemsPerMinute.truncateToDouble() == recipe.itemsPerMinute ? 0 : 2)}/min',
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                 ),
@@ -429,7 +438,9 @@ class _FlowSection extends StatelessWidget {
                         Text(
                           '${_formatNumber(perMinute)}/min',
                           style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
+                            color: theme.colorScheme.onSurface.withValues(
+                              alpha: 0.6,
+                            ),
                           ),
                         ),
                       ],
@@ -513,8 +524,8 @@ class _ProductionInfo extends StatelessWidget {
           value: recipe.producedIn.isNotEmpty
               ? recipe.producedIn.join(', ')
               : recipe.inCraftBench
-                  ? 'Craft Bench'
-                  : 'Build Gun',
+              ? 'Craft Bench'
+              : 'Build Gun',
         ),
         const SizedBox(height: 12),
         _InfoRow(
@@ -527,7 +538,8 @@ class _ProductionInfo extends StatelessWidget {
           _InfoRow(
             icon: Icons.speed,
             label: 'Output Rate',
-            value: '${recipe.itemsPerMinute.toStringAsFixed(recipe.itemsPerMinute.truncateToDouble() == recipe.itemsPerMinute ? 0 : 2)}/min',
+            value:
+                '${recipe.itemsPerMinute.toStringAsFixed(recipe.itemsPerMinute.truncateToDouble() == recipe.itemsPerMinute ? 0 : 2)}/min',
           ),
         ],
       ],
@@ -604,16 +616,11 @@ class _ProductionCalculatorState extends ConsumerState<_ProductionCalculator> {
       children: [
         if (widget.recipesForItem.length > 1) ...[
           DropdownButtonFormField<Recipe>(
-            value: _selectedRecipe,
-            decoration: const InputDecoration(
-              labelText: 'Recipe',
-            ),
+            initialValue: _selectedRecipe,
+            decoration: const InputDecoration(labelText: 'Recipe'),
             items: [
               for (final recipe in widget.recipesForItem)
-                DropdownMenuItem(
-                  value: recipe,
-                  child: Text(recipe.name),
-                ),
+                DropdownMenuItem(value: recipe, child: Text(recipe.name)),
             ],
             onChanged: (recipe) {
               if (recipe == null) return;
@@ -812,11 +819,13 @@ class _ProductionSummary extends StatelessWidget {
               )
             else
               ...machineTotals.entries
-                  .map((entry) => _SummaryRow(
-                        label: entry.key,
-                        value: _formatNumber(entry.value),
-                      ))
-                  .toList(),
+                  .map(
+                    (entry) => _SummaryRow(
+                      label: entry.key,
+                      value: _formatNumber(entry.value),
+                    ),
+                  )
+                  ,
             const SizedBox(height: 16),
             Text(
               'Raw Resources (/min)',
@@ -834,11 +843,13 @@ class _ProductionSummary extends StatelessWidget {
               )
             else
               ...rawTotals.entries
-                  .map((entry) => _SummaryRow(
-                        label: entry.key,
-                        value: '${_formatNumber(entry.value)}/min',
-                      ))
-                  .toList(),
+                  .map(
+                    (entry) => _SummaryRow(
+                      label: entry.key,
+                      value: '${_formatNumber(entry.value)}/min',
+                    ),
+                  )
+                  ,
           ],
         ),
       ),
@@ -859,12 +870,7 @@ class _SummaryRow extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         children: [
-          Expanded(
-            child: Text(
-              label,
-              style: theme.textTheme.bodyMedium,
-            ),
-          ),
+          Expanded(child: Text(label, style: theme.textTheme.bodyMedium)),
           Text(
             value,
             style: theme.textTheme.bodyMedium?.copyWith(
@@ -894,7 +900,11 @@ double _parseRate(String raw, {required double fallback}) {
 String _formatNumber(double value) {
   if (value.isNaN || value.isInfinite) return '0';
   final absValue = value.abs();
-  final decimals = absValue >= 100 ? 0 : absValue >= 1 ? 2 : 3;
+  final decimals = absValue >= 100
+      ? 0
+      : absValue >= 1
+      ? 2
+      : 3;
   final text = value.toStringAsFixed(decimals);
   return text.replaceFirst(RegExp(r'\.?0+$'), '');
 }

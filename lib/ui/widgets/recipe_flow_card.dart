@@ -7,73 +7,71 @@ class RecipeFlowCard extends StatelessWidget {
   final Recipe recipe;
   final void Function(RecipeItem item)? onItemTap;
 
-  const RecipeFlowCard({
-    super.key,
-    required this.recipe,
-    this.onItemTap,
-  });
+  const RecipeFlowCard({super.key, required this.recipe, this.onItemTap});
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context, constraints) {
-      final isCompact = constraints.maxWidth < 700;
-      return Card(
-        margin: EdgeInsets.zero,
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: isCompact
-              ? Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _FlowSection(
-                      title: 'Ingredients',
-                      items: recipe.ingredients,
-                      duration: recipe.duration,
-                      onItemTap: onItemTap,
-                    ),
-                    const Divider(height: 24),
-                    _FlowSection(
-                      title: 'Products',
-                      items: recipe.products,
-                      duration: recipe.duration,
-                      onItemTap: onItemTap,
-                    ),
-                    const Divider(height: 24),
-                    RecipeProductionInfo(recipe: recipe),
-                  ],
-                )
-              : IntrinsicHeight(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isCompact = constraints.maxWidth < 700;
+        return Card(
+          margin: EdgeInsets.zero,
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: isCompact
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Expanded(
-                        child: _FlowSection(
-                          title: 'Ingredients',
-                          items: recipe.ingredients,
-                          duration: recipe.duration,
-                          onItemTap: onItemTap,
-                        ),
+                      _FlowSection(
+                        title: 'Ingredients',
+                        items: recipe.ingredients,
+                        duration: recipe.duration,
+                        onItemTap: onItemTap,
                       ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: _FlowSection(
-                          title: 'Products',
-                          items: recipe.products,
-                          duration: recipe.duration,
-                          onItemTap: onItemTap,
-                        ),
+                      const Divider(height: 24),
+                      _FlowSection(
+                        title: 'Products',
+                        items: recipe.products,
+                        duration: recipe.duration,
+                        onItemTap: onItemTap,
                       ),
-                      const SizedBox(width: 16),
-                      SizedBox(
-                        width: 220,
-                        child: RecipeProductionInfo(recipe: recipe),
-                      ),
+                      const Divider(height: 24),
+                      RecipeProductionInfo(recipe: recipe),
                     ],
+                  )
+                : IntrinsicHeight(
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Expanded(
+                          child: _FlowSection(
+                            title: 'Ingredients',
+                            items: recipe.ingredients,
+                            duration: recipe.duration,
+                            onItemTap: onItemTap,
+                          ),
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: _FlowSection(
+                            title: 'Products',
+                            items: recipe.products,
+                            duration: recipe.duration,
+                            onItemTap: onItemTap,
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        SizedBox(
+                          width: 220,
+                          child: RecipeProductionInfo(recipe: recipe),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-        ),
-      );
-    });
+          ),
+        );
+      },
+    );
   }
 }
 
@@ -139,7 +137,11 @@ class RecipeFlowMiniCard extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                '${recipe.producedIn.isNotEmpty ? recipe.producedIn.join(', ') : recipe.inCraftBench ? 'Craft Bench' : 'Build Gun'} • ${recipe.duration}s • ${_formatNumber(recipe.itemsPerMinute)}/min',
+                '${recipe.producedIn.isNotEmpty
+                    ? recipe.producedIn.join(', ')
+                    : recipe.inCraftBench
+                    ? 'Craft Bench'
+                    : 'Build Gun'} • ${recipe.duration}s • ${_formatNumber(recipe.itemsPerMinute)}/min',
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                 ),
@@ -167,8 +169,8 @@ class RecipeProductionInfo extends StatelessWidget {
           value: recipe.producedIn.isNotEmpty
               ? recipe.producedIn.join(', ')
               : recipe.inCraftBench
-                  ? 'Craft Bench'
-                  : 'Build Gun',
+              ? 'Craft Bench'
+              : 'Build Gun',
         ),
         const SizedBox(height: 12),
         _InfoRow(
@@ -181,8 +183,7 @@ class RecipeProductionInfo extends StatelessWidget {
           _InfoRow(
             icon: Icons.speed,
             label: 'Output Rate',
-            value:
-                '${_formatNumber(recipe.itemsPerMinute)}/min',
+            value: '${_formatNumber(recipe.itemsPerMinute)}/min',
           ),
         ],
       ],
@@ -253,7 +254,9 @@ class _FlowSection extends StatelessWidget {
                         Text(
                           '${_formatNumber(perMinute)}/min',
                           style: theme.textTheme.bodySmall?.copyWith(
-                            color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
+                            color: theme.colorScheme.onSurface.withValues(
+                              alpha: 0.6,
+                            ),
                           ),
                         ),
                       ],
@@ -366,7 +369,11 @@ class _InfoRow extends StatelessWidget {
 String _formatNumber(double value) {
   if (value.isNaN || value.isInfinite) return '0';
   final absValue = value.abs();
-  final decimals = absValue >= 100 ? 0 : absValue >= 1 ? 2 : 3;
+  final decimals = absValue >= 100
+      ? 0
+      : absValue >= 1
+      ? 2
+      : 3;
   final text = value.toStringAsFixed(decimals);
   return text.replaceFirst(RegExp(r'\.?0+$'), '');
 }

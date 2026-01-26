@@ -7,7 +7,9 @@ enum RecipeFilter { all, production, alternate, building }
 
 final searchQueryProvider = StateProvider<String>((ref) => '');
 
-final recipeFilterProvider = StateProvider<RecipeFilter>((ref) => RecipeFilter.production);
+final recipeFilterProvider = StateProvider<RecipeFilter>(
+  (ref) => RecipeFilter.production,
+);
 
 final filteredRecipesProvider = Provider<List<Recipe>>((ref) {
   final filter = ref.watch(recipeFilterProvider);
@@ -41,7 +43,9 @@ final filteredRecipesProvider = Provider<List<Recipe>>((ref) {
     for (final product in recipe.products) {
       if (product.name.toLowerCase().contains(query)) return true;
     }
-    if (recipe.producedIn.any((m) => m.toLowerCase().contains(query))) return true;
+    if (recipe.producedIn.any((m) => m.toLowerCase().contains(query))) {
+      return true;
+    }
     return false;
   }).toList();
 });
