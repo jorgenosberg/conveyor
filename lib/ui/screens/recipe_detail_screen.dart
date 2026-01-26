@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/models.dart';
 import '../../providers/providers.dart';
 import '../theme/app_theme.dart';
 import '../widgets/header_background.dart';
 import '../widgets/item_image.dart';
+import '../widgets/common.dart';
 
 class RecipeDetailScreen extends ConsumerStatefulWidget {
   final String recipeClassName;
@@ -25,6 +25,10 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
   void initState() {
     super.initState();
     _headerImage = pickRandomHeaderBackground();
+    // Track view in recents
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      ref.read(recentRecipesProvider.notifier).add(widget.recipeClassName);
+    });
   }
 
   @override
@@ -32,6 +36,7 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.recipeClassName != widget.recipeClassName) {
       _headerImage = pickRandomHeaderBackground();
+      ref.read(recentRecipesProvider.notifier).add(widget.recipeClassName);
     }
   }
 
@@ -58,13 +63,6 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
             backgroundColor: AppColors.background,
             surfaceTintColor: AppColors.background,
             elevation: 0,
-            actions: [
-              IconButton(
-                icon: const Icon(Icons.open_in_new),
-                tooltip: 'Open in Wiki',
-                onPressed: () => _openWikiUrl(recipe.wikiUrl),
-              ),
-            ],
             flexibleSpace: FlexibleSpaceBar(
               background: HeaderBackground(
                 imagePath: _headerImage,
@@ -78,13 +76,13 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _Section(
+                  ContentSection(
                     title: 'Recipe Flow',
                     child: _RecipeFlowCard(recipe: recipe),
                   ),
                   if (recipesForItem.length > 1) ...[
                     const SizedBox(height: 24),
-                    _Section(
+                    ContentSection(
                       title:
                           'Recipes for ${targetProduct?.name ?? recipe.primaryProductName}',
                       child: Column(
@@ -96,11 +94,8 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
                               onTap: related.className == recipe.className
                                   ? null
                                   : () {
-                                      context.pushNamed(
-                                        'recipeDetail',
-                                        pathParameters: {
-                                          'className': related.className,
-                                        },
+                                      context.push(
+                                        '/recipes/${related.className}',
                                       );
                                     },
                             ),
@@ -110,13 +105,13 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
                   ],
                   if (recipe.unlockedBy.isNotEmpty) ...[
                     const SizedBox(height: 24),
-                    _Section(
+                    ContentSection(
                       title: 'Unlocked By',
                       child: Text(recipe.unlockedBy),
                     ),
                   ],
                   const SizedBox(height: 24),
-                  _Section(
+                  ContentSection(
                     title: 'Production Chain',
                     child: _ProductionCalculator(
                       initialRecipe: recipe,
@@ -203,33 +198,6 @@ class _RecipeHeader extends StatelessWidget {
             ],
           ),
         ),
-      ],
-    );
-  }
-}
-
-class _Section extends StatelessWidget {
-  final String title;
-  final Widget child;
-
-  const _Section({required this.title, required this.child});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          title,
-          style: theme.textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
-            color: theme.colorScheme.primary,
-          ),
-        ),
-        const SizedBox(height: 12),
-        child,
       ],
     );
   }
@@ -361,7 +329,7 @@ class _AlternateRecipeFlowCard extends StatelessWidget {
                     ? recipe.producedIn.join(', ')
                     : recipe.inCraftBench
                     ? 'Craft Bench'
-                    : 'Build Gun'} • ${recipe.duration}s • ${recipe.itemsPerMinute.toStringAsFixed(recipe.itemsPerMinute.truncateToDouble() == recipe.itemsPerMinute ? 0 : 2)}/min',
+                    : 'Build Gun'} • ${recipe.duration}s • ${formatNumber(recipe.itemsPerMinute)}/min',
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                 ),
@@ -420,10 +388,7 @@ class _FlowSection extends StatelessWidget {
                 Expanded(
                   child: GestureDetector(
                     onTap: () {
-                      context.pushNamed(
-                        'itemDetail',
-                        pathParameters: {'className': item.className},
-                      );
+                      context.push('/items/${item.className}');
                     },
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -435,7 +400,7 @@ class _FlowSection extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          '${_formatNumber(perMinute)}/min',
+                          '${formatNumber(perMinute)}/min',
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurface.withValues(
                               alpha: 0.6,
@@ -532,8 +497,7 @@ class _ProductionInfo extends StatelessWidget {
           _InfoRow(
             icon: Icons.speed,
             label: 'Output Rate',
-            value:
-                '${recipe.itemsPerMinute.toStringAsFixed(recipe.itemsPerMinute.truncateToDouble() == recipe.itemsPerMinute ? 0 : 2)}/min',
+            value: '${formatNumber(recipe.itemsPerMinute)}/min',
           ),
         ],
       ],
@@ -568,7 +532,7 @@ class _ProductionCalculatorState extends ConsumerState<_ProductionCalculator> {
     super.initState();
     _selectedRecipe = widget.initialRecipe;
     _rateController = TextEditingController(
-      text: _formatNumber(_defaultRate(_selectedRecipe)),
+      text: formatNumber(_defaultRate(_selectedRecipe)),
     );
   }
 
@@ -578,7 +542,7 @@ class _ProductionCalculatorState extends ConsumerState<_ProductionCalculator> {
     if (oldWidget.initialRecipe.className != widget.initialRecipe.className ||
         oldWidget.targetClassName != widget.targetClassName) {
       _selectedRecipe = widget.initialRecipe;
-      _rateController.text = _formatNumber(_defaultRate(_selectedRecipe));
+      _rateController.text = formatNumber(_defaultRate(_selectedRecipe));
     }
   }
 
@@ -620,7 +584,7 @@ class _ProductionCalculatorState extends ConsumerState<_ProductionCalculator> {
               if (recipe == null) return;
               setState(() {
                 _selectedRecipe = recipe;
-                _rateController.text = _formatNumber(_defaultRate(recipe));
+                _rateController.text = formatNumber(_defaultRate(recipe));
               });
             },
           ),
@@ -703,7 +667,7 @@ class _PlanRow extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final indent = depth * 16.0;
-    final rateLabel = '${_formatNumber(node.ratePerMinute)}/min';
+    final rateLabel = '${formatNumber(node.ratePerMinute)}/min';
 
     return Padding(
       padding: EdgeInsets.only(left: indent, bottom: 12),
@@ -744,7 +708,7 @@ class _PlanRow extends StatelessWidget {
               Text(
                 node.isRaw
                     ? 'Raw'
-                    : '${_formatNumber(node.machines)} machine${node.machines == 1 ? '' : 's'}',
+                    : '${formatNumber(node.machines)} machine${node.machines == 1 ? '' : 's'}',
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                 ),
@@ -816,7 +780,7 @@ class _ProductionSummary extends StatelessWidget {
                   .map(
                     (entry) => _SummaryRow(
                       label: entry.key,
-                      value: _formatNumber(entry.value),
+                      value: formatNumber(entry.value),
                     ),
                   )
                   ,
@@ -840,7 +804,7 @@ class _ProductionSummary extends StatelessWidget {
                   .map(
                     (entry) => _SummaryRow(
                       label: entry.key,
-                      value: '${_formatNumber(entry.value)}/min',
+                      value: '${formatNumber(entry.value)}/min',
                     ),
                   )
                   ,
@@ -875,32 +839,6 @@ class _SummaryRow extends StatelessWidget {
       ),
     );
   }
-}
-
-Future<void> _openWikiUrl(String url) async {
-  final uri = Uri.parse(url);
-  if (await canLaunchUrl(uri)) {
-    await launchUrl(uri, mode: LaunchMode.externalApplication);
-  }
-}
-
-double _parseRate(String raw, {required double fallback}) {
-  final cleaned = raw.replaceAll(',', '.').trim();
-  final value = double.tryParse(cleaned);
-  if (value == null || value <= 0) return fallback;
-  return value;
-}
-
-String _formatNumber(double value) {
-  if (value.isNaN || value.isInfinite) return '0';
-  final absValue = value.abs();
-  final decimals = absValue >= 100
-      ? 0
-      : absValue >= 1
-      ? 2
-      : 3;
-  final text = value.toStringAsFixed(decimals);
-  return text.replaceFirst(RegExp(r'\.?0+$'), '');
 }
 
 class _InfoRow extends StatelessWidget {
@@ -942,4 +880,11 @@ class _InfoRow extends StatelessWidget {
       ],
     );
   }
+}
+
+double _parseRate(String raw, {required double fallback}) {
+  final cleaned = raw.replaceAll(',', '.').trim();
+  final value = double.tryParse(cleaned);
+  if (value == null || value <= 0) return fallback;
+  return value;
 }

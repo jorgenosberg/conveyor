@@ -14,13 +14,7 @@ class RecipeBrowserScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Conveyor'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.info_outline),
-            onPressed: () => _showAboutDialog(context),
-          ),
-        ],
+        title: const Text('Recipes'),
       ),
       body: dataLoaded.when(
         loading: () => const Center(
@@ -56,25 +50,6 @@ class RecipeBrowserScreen extends ConsumerWidget {
           ),
         ),
         data: (_) => const _RecipeList(),
-      ),
-    );
-  }
-
-  void _showAboutDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Conveyor'),
-        content: const Text(
-          'A Satisfactory companion app for planning your factory production lines.\n\n'
-          'Data sourced from the official Satisfactory wiki.',
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Close'),
-          ),
-        ],
       ),
     );
   }
@@ -133,16 +108,18 @@ class _RecipeList extends ConsumerWidget {
                   ),
                 )
               : ListView.builder(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   itemCount: recipes.length,
                   itemBuilder: (context, index) {
                     final recipe = recipes[index];
-                    return RecipeCard(
+                    return RecipeFlowMiniCard(
                       recipe: recipe,
+                      isSelected: false,
                       onTap: () {
-                        context.pushNamed(
-                          'recipeDetail',
-                          pathParameters: {'className': recipe.className},
-                        );
+                        context.push('/recipes/${recipe.className}');
+                      },
+                      onItemTap: (item) {
+                        context.push('/items/${item.className}');
                       },
                     );
                   },
