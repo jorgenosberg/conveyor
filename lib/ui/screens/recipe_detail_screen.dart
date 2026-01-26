@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/models.dart';
 import '../../providers/providers.dart';
+import '../widgets/header_background.dart';
 import '../widgets/item_image.dart';
 
 class RecipeDetailScreen extends ConsumerStatefulWidget {
@@ -21,6 +22,22 @@ class RecipeDetailScreen extends ConsumerStatefulWidget {
 }
 
 class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
+  late String _headerImage;
+
+  @override
+  void initState() {
+    super.initState();
+    _headerImage = pickRandomHeaderBackground();
+  }
+
+  @override
+  void didUpdateWidget(covariant RecipeDetailScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.recipeClassName != widget.recipeClassName) {
+      _headerImage = pickRandomHeaderBackground();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final recipes = ref.watch(allRecipesProvider);
@@ -34,70 +51,87 @@ class _RecipeDetailScreenState extends ConsumerState<RecipeDetailScreen> {
     final recipesForItem = _recipesForItem(recipes, targetClassName);
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(recipe.name),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.open_in_new),
-            tooltip: 'Open in Wiki',
-            onPressed: () => _openWikiUrl(recipe.wikiUrl),
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            pinned: true,
+            expandedHeight: 300,
+            title: const SizedBox.shrink(),
+            backgroundColor: Color(0xFF1A1A2E),
+            surfaceTintColor: Color(0xFF1A1A2E),
+            elevation: 0,
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.open_in_new),
+                tooltip: 'Open in Wiki',
+                onPressed: () => _openWikiUrl(recipe.wikiUrl),
+              ),
+            ],
+            flexibleSpace: FlexibleSpaceBar(
+              background: HeaderBackground(
+                imagePath: _headerImage,
+                child: _RecipeHeader(recipe: recipe),
+              ),
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.all(16),
+            sliver: SliverToBoxAdapter(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  _Section(
+                    title: 'Recipe Flow',
+                    child: _RecipeFlowCard(recipe: recipe),
+                  ),
+                  if (recipesForItem.length > 1) ...[
+                    const SizedBox(height: 24),
+                    _Section(
+                      title:
+                          'Recipes for ${targetProduct?.name ?? recipe.primaryProductName}',
+                      child: Column(
+                        children: [
+                          for (final related in recipesForItem)
+                            _AlternateRecipeFlowCard(
+                              recipe: related,
+                              isSelected: related.className == recipe.className,
+                              onTap: related.className == recipe.className
+                                  ? null
+                                  : () {
+                                      context.pushNamed(
+                                        'recipeDetail',
+                                        pathParameters: {
+                                          'className': related.className,
+                                        },
+                                      );
+                                    },
+                            ),
+                        ],
+                      ),
+                    ),
+                  ],
+                  if (recipe.unlockedBy.isNotEmpty) ...[
+                    const SizedBox(height: 24),
+                    _Section(
+                      title: 'Unlocked By',
+                      child: Text(recipe.unlockedBy),
+                    ),
+                  ],
+                  const SizedBox(height: 24),
+                  _Section(
+                    title: 'Production Chain',
+                    child: _ProductionCalculator(
+                      initialRecipe: recipe,
+                      targetClassName: targetClassName,
+                      targetName: targetProduct?.name ?? recipe.primaryProductName,
+                      recipesForItem: recipesForItem,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
-      ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            _RecipeHeader(recipe: recipe),
-            const SizedBox(height: 24),
-            _Section(
-              title: 'Recipe Flow',
-              child: _RecipeFlowCard(recipe: recipe),
-            ),
-            if (recipesForItem.length > 1) ...[
-              const SizedBox(height: 24),
-              _Section(
-                title:
-                    'Recipes for ${targetProduct?.name ?? recipe.primaryProductName}',
-                child: Column(
-                  children: [
-                    for (final related in recipesForItem)
-                      _AlternateRecipeFlowCard(
-                        recipe: related,
-                        isSelected: related.className == recipe.className,
-                        onTap: related.className == recipe.className
-                            ? null
-                            : () {
-                                context.pushNamed(
-                                  'recipeDetail',
-                                  pathParameters: {'className': related.className},
-                                );
-                              },
-                      ),
-                  ],
-                ),
-              ),
-            ],
-            if (recipe.unlockedBy.isNotEmpty) ...[
-              const SizedBox(height: 24),
-              _Section(
-                title: 'Unlocked By',
-                child: Text(recipe.unlockedBy),
-              ),
-            ],
-            const SizedBox(height: 24),
-            _Section(
-              title: 'Production Chain',
-              child: _ProductionCalculator(
-                initialRecipe: recipe,
-                targetClassName: targetClassName,
-                targetName: targetProduct?.name ?? recipe.primaryProductName,
-                recipesForItem: recipesForItem,
-              ),
-            ),
-          ],
-        ),
       ),
     );
   }
@@ -127,28 +161,29 @@ class _RecipeHeader extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         if (recipe.products.isNotEmpty) ...[
-          ItemImage(item: recipe.products.first, size: 64),
+          ItemImage(item: recipe.products.first, size: 60),
           const SizedBox(width: 16),
         ],
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             children: [
               if (recipe.isAlternate)
                 Container(
                   margin: const EdgeInsets.only(bottom: 8),
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: theme.colorScheme.primary.withValues(alpha: 0.2),
+                    color: theme.colorScheme.surface.withValues(alpha: 0.4),
                     borderRadius: BorderRadius.circular(4),
                   ),
                   child: Text(
                     'ALTERNATE RECIPE',
                     style: TextStyle(
-                      color: theme.colorScheme.primary,
+                      color: theme.colorScheme.onSurface,
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
                     ),
@@ -158,6 +193,7 @@ class _RecipeHeader extends StatelessWidget {
                 recipe.name,
                 style: theme.textTheme.headlineSmall?.copyWith(
                   fontWeight: FontWeight.bold,
+                  color: theme.colorScheme.onSurface,
                 ),
               ),
             ],
