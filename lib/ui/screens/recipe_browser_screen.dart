@@ -76,6 +76,8 @@ class _RecipeList extends ConsumerWidget {
                   color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                 ),
               ),
+              const Spacer(),
+              const _RecipeSortButton(),
             ],
           ),
         ),
@@ -127,4 +129,85 @@ class _RecipeList extends ConsumerWidget {
       ],
     );
   }
+}
+
+class _RecipeSortButton extends ConsumerWidget {
+  const _RecipeSortButton();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final sortMode = ref.watch(recipeSortModeProvider);
+    return Tooltip(
+      message: 'Sort: ${_recipeSortLabel(sortMode)}',
+      child: TextButton.icon(
+        onPressed: () {
+          showModalBottomSheet<void>(
+            context: context,
+            showDragHandle: true,
+            builder: (context) => const _RecipeSortSheet(),
+          );
+        },
+        icon: const Icon(Icons.sort),
+        label: const Text('Sort'),
+      ),
+    );
+  }
+}
+
+class _RecipeSortSheet extends ConsumerWidget {
+  const _RecipeSortSheet();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final sortMode = ref.watch(recipeSortModeProvider);
+    final preferStandard = ref.watch(preferStandardRecipesProvider);
+    final theme = Theme.of(context);
+
+    return SafeArea(
+      child: ListView(
+        shrinkWrap: true,
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text(
+              'Sort recipes',
+              style: theme.textTheme.titleMedium,
+            ),
+          ),
+          for (final mode in RecipeSortMode.values)
+            RadioListTile<RecipeSortMode>(
+              value: mode,
+              groupValue: sortMode,
+              title: Text(_recipeSortLabel(mode)),
+              onChanged: (value) {
+                if (value == null) return;
+                ref.read(recipeSortModeProvider.notifier).state = value;
+              },
+            ),
+          const Divider(),
+          SwitchListTile(
+            title: const Text('Prefer standard recipes in search'),
+            subtitle: const Text(
+              'Alternate recipes appear lower in relevance results.',
+            ),
+            value: preferStandard,
+            onChanged: (value) {
+              ref.read(preferStandardRecipesProvider.notifier).state = value;
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+String _recipeSortLabel(RecipeSortMode mode) {
+  return switch (mode) {
+    RecipeSortMode.relevance => 'Relevance',
+    RecipeSortMode.nameAsc => 'Name (A-Z)',
+    RecipeSortMode.nameDesc => 'Name (Z-A)',
+    RecipeSortMode.outputDesc => 'Output rate (high to low)',
+    RecipeSortMode.outputAsc => 'Output rate (low to high)',
+  };
 }

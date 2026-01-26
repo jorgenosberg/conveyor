@@ -99,6 +99,8 @@ class _ItemList extends ConsumerWidget {
                   color: theme.colorScheme.onSurface.withValues(alpha: 0.6),
                 ),
               ),
+              const Spacer(),
+              const _ItemSortButton(),
             ],
           ),
         ),
@@ -255,4 +257,74 @@ class _ItemListView extends StatelessWidget {
       },
     );
   }
+}
+
+class _ItemSortButton extends ConsumerWidget {
+  const _ItemSortButton();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final sortMode = ref.watch(itemSortModeProvider);
+    return Tooltip(
+      message: 'Sort: ${_itemSortLabel(sortMode)}',
+      child: TextButton.icon(
+        onPressed: () {
+          showModalBottomSheet<void>(
+            context: context,
+            showDragHandle: true,
+            builder: (context) => const _ItemSortSheet(),
+          );
+        },
+        icon: const Icon(Icons.sort),
+        label: const Text('Sort'),
+      ),
+    );
+  }
+}
+
+class _ItemSortSheet extends ConsumerWidget {
+  const _ItemSortSheet();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final sortMode = ref.watch(itemSortModeProvider);
+    final theme = Theme.of(context);
+
+    return SafeArea(
+      child: ListView(
+        shrinkWrap: true,
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text(
+              'Sort items',
+              style: theme.textTheme.titleMedium,
+            ),
+          ),
+          for (final mode in ItemSortMode.values)
+            RadioListTile<ItemSortMode>(
+              value: mode,
+              groupValue: sortMode,
+              title: Text(_itemSortLabel(mode)),
+              onChanged: (value) {
+                if (value == null) return;
+                ref.read(itemSortModeProvider.notifier).state = value;
+              },
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+String _itemSortLabel(ItemSortMode mode) {
+  return switch (mode) {
+    ItemSortMode.nameAsc => 'Name (A-Z)',
+    ItemSortMode.nameDesc => 'Name (Z-A)',
+    ItemSortMode.stackSizeDesc => 'Stack size (high to low)',
+    ItemSortMode.sinkPointsDesc => 'Sink points (high to low)',
+    ItemSortMode.energyDesc => 'Energy (high to low)',
+    ItemSortMode.radioactivityDesc => 'Radioactivity (high to low)',
+  };
 }
