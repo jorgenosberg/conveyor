@@ -776,14 +776,12 @@ class _ProductionSummary extends StatelessWidget {
                 ),
               )
             else
-              ...machineTotals.entries
-                  .map(
-                    (entry) => _SummaryRow(
-                      label: entry.key,
-                      value: formatNumber(entry.value),
-                    ),
-                  )
-                  ,
+              ...machineTotals.entries.map(
+                (entry) => _SummaryRow(
+                  label: entry.key,
+                  value: formatNumber(entry.value),
+                ),
+              ),
             const SizedBox(height: 16),
             Text(
               'Raw Resources (/min)',
@@ -800,14 +798,12 @@ class _ProductionSummary extends StatelessWidget {
                 ),
               )
             else
-              ...rawTotals.entries
-                  .map(
-                    (entry) => _SummaryRow(
-                      label: entry.key,
-                      value: '${formatNumber(entry.value)}/min',
-                    ),
-                  )
-                  ,
+              ...rawTotals.entries.map(
+                (entry) => _SummaryRow(
+                  label: entry.key,
+                  value: '${formatNumber(entry.value)}/min',
+                ),
+              ),
           ],
         ),
       ),

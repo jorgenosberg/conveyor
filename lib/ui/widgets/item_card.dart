@@ -62,9 +62,7 @@ class ItemListCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: AppColors.surfaceLight,
-          border: Border(
-            bottom: BorderSide(color: AppColors.borderLight),
-          ),
+          border: Border(bottom: BorderSide(color: AppColors.borderLight)),
         ),
         padding: const EdgeInsets.all(12),
         child: Row(
@@ -85,8 +83,9 @@ class ItemListCard extends StatelessWidget {
                     Text(
                       item.description,
                       style: theme.textTheme.bodySmall?.copyWith(
-                        color:
-                            theme.colorScheme.onSurface.withValues(alpha: 0.6),
+                        color: theme.colorScheme.onSurface.withValues(
+                          alpha: 0.6,
+                        ),
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,

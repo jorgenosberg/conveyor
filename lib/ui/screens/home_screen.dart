@@ -15,9 +15,7 @@ class HomeScreen extends ConsumerWidget {
     final dataLoaded = ref.watch(gameDataLoadedProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Conveyor'),
-      ),
+      appBar: AppBar(title: const Text('Conveyor')),
       body: dataLoaded.when(
         loading: () => const Center(
           child: Column(
@@ -97,10 +95,7 @@ class _HomeContent extends ConsumerWidget {
           const SizedBox(height: 24),
 
           // Recent Items
-          _SectionHeader(
-            title: 'Recent Items',
-            isEmpty: recentItems.isEmpty,
-          ),
+          _SectionHeader(title: 'Recent Items', isEmpty: recentItems.isEmpty),
           if (recentItems.isEmpty)
             _EmptyState(
               icon: Icons.history,
@@ -145,7 +140,9 @@ class _HomeContent extends ConsumerWidget {
                 separatorBuilder: (_, __) => const SizedBox(width: 12),
                 itemBuilder: (context, index) {
                   final className = recentRecipes[index];
-                  final recipe = recipes.where((r) => r.className == className).firstOrNull;
+                  final recipe = recipes
+                      .where((r) => r.className == className)
+                      .firstOrNull;
                   if (recipe == null) return const SizedBox.shrink();
                   return _RecentRecipeCard(
                     recipe: recipe,
@@ -336,8 +333,7 @@ class _RecentRecipeCard extends StatelessWidget {
         ),
         child: Row(
           children: [
-            if (product != null)
-              ItemImage(item: product, size: 36),
+            if (product != null) ItemImage(item: product, size: 36),
             const SizedBox(width: 8),
             Expanded(
               child: Column(

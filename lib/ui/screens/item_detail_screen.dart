@@ -177,9 +177,7 @@ class _ItemDetailScreenState extends ConsumerState<ItemDetailScreen> {
                                     );
                                   },
                                   onItemTap: (item) {
-                                    context.push(
-                                      '/items/${item.className}',
-                                    );
+                                    context.push('/items/${item.className}');
                                   },
                                 ),
                             ],

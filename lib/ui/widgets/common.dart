@@ -35,8 +35,8 @@ String formatNumber(double value) {
   final decimals = absValue >= 100
       ? 0
       : absValue >= 1
-          ? 2
-          : 3;
+      ? 2
+      : 3;
   final text = value.toStringAsFixed(decimals);
   return text.replaceFirst(RegExp(r'\.?0+$'), '');
 }

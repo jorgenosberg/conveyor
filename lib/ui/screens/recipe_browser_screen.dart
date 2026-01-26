@@ -13,9 +13,7 @@ class RecipeBrowserScreen extends ConsumerWidget {
     final dataLoaded = ref.watch(gameDataLoadedProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Recipes'),
-      ),
+      appBar: AppBar(title: const Text('Recipes')),
       body: dataLoaded.when(
         loading: () => const Center(
           child: Column(
@@ -115,6 +113,7 @@ class _RecipeList extends ConsumerWidget {
                     return RecipeFlowMiniCard(
                       recipe: recipe,
                       isSelected: false,
+                      showTitle: true,
                       onTap: () {
                         context.push('/recipes/${recipe.className}');
                       },

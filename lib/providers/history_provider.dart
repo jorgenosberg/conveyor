@@ -38,10 +38,10 @@ class RecentRecipesNotifier extends StateNotifier<List<String>> {
 
 final recentItemsProvider =
     StateNotifierProvider<RecentItemsNotifier, List<String>>((ref) {
-  return RecentItemsNotifier();
-});
+      return RecentItemsNotifier();
+    });
 
 final recentRecipesProvider =
     StateNotifierProvider<RecentRecipesNotifier, List<String>>((ref) {
-  return RecentRecipesNotifier();
-});
+      return RecentRecipesNotifier();
+    });

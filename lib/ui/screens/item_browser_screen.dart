@@ -14,12 +14,7 @@ class ItemBrowserScreen extends ConsumerWidget {
     final dataLoaded = ref.watch(gameDataLoadedProvider);
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Items'),
-        actions: [
-          _ViewModeToggle(),
-        ],
-      ),
+      appBar: AppBar(title: const Text('Items'), actions: [_ViewModeToggle()]),
       body: dataLoaded.when(
         loading: () => const Center(
           child: Column(
@@ -70,10 +65,11 @@ class _ViewModeToggle extends ConsumerWidget {
       ),
       tooltip: viewMode == ItemViewMode.grid ? 'List view' : 'Grid view',
       onPressed: () {
-        ref.read(itemViewModeProvider.notifier).state =
-            viewMode == ItemViewMode.grid
-                ? ItemViewMode.list
-                : ItemViewMode.grid;
+        ref
+            .read(itemViewModeProvider.notifier)
+            .state = viewMode == ItemViewMode.grid
+            ? ItemViewMode.list
+            : ItemViewMode.grid;
       },
     );
   }
@@ -133,8 +129,8 @@ class _ItemList extends ConsumerWidget {
                   ),
                 )
               : viewMode == ItemViewMode.grid
-                  ? _ItemGridView(items: items)
-                  : _ItemListView(items: items),
+              ? _ItemGridView(items: items)
+              : _ItemListView(items: items),
         ),
       ],
     );
@@ -188,8 +184,9 @@ class _ItemFilterChips extends ConsumerWidget {
               label: Text(_filterLabel(filter)),
               selected: selectedFilter == filter,
               onSelected: (selected) {
-                ref.read(itemFilterProvider.notifier).state =
-                    selected ? filter : ItemFilter.all;
+                ref.read(itemFilterProvider.notifier).state = selected
+                    ? filter
+                    : ItemFilter.all;
               },
             ),
             const SizedBox(width: 8),

@@ -11,8 +11,9 @@ final itemSearchQueryProvider = StateProvider<String>((ref) => '');
 
 final itemFilterProvider = StateProvider<ItemFilter>((ref) => ItemFilter.all);
 
-final itemViewModeProvider =
-    StateProvider<ItemViewMode>((ref) => ItemViewMode.grid);
+final itemViewModeProvider = StateProvider<ItemViewMode>(
+  (ref) => ItemViewMode.grid,
+);
 
 final filteredItemsProvider = Provider<List<GameItem>>((ref) {
   final itemsMap = ref.watch(allItemsProvider);

@@ -79,6 +79,7 @@ class RecipeFlowCard extends StatelessWidget {
 class RecipeFlowMiniCard extends StatelessWidget {
   final Recipe recipe;
   final bool isSelected;
+  final bool showTitle;
   final VoidCallback? onTap;
   final void Function(RecipeItem item)? onItemTap;
 
@@ -86,6 +87,7 @@ class RecipeFlowMiniCard extends StatelessWidget {
     super.key,
     required this.recipe,
     required this.isSelected,
+    this.showTitle = false,
     this.onTap,
     this.onItemTap,
   });
@@ -112,6 +114,44 @@ class RecipeFlowMiniCard extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              if (showTitle) ...[
+                Row(
+                  children: [
+                    if (recipe.products.isNotEmpty) ...[
+                      ItemImage(item: recipe.products.first, size: 32),
+                      const SizedBox(width: 10),
+                    ],
+                    Expanded(
+                      child: Text(
+                        recipe.name,
+                        style: theme.textTheme.titleSmall?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    if (recipe.isAlternate)
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 4,
+                        ),
+                        decoration: BoxDecoration(
+                          color: AppColors.primary,
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                        child: const Text(
+                          'ALT',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 10,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+                const Divider(height: 20),
+              ],
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
