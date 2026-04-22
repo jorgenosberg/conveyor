@@ -1,4 +1,13 @@
-# Conveyor
+<p align="center">
+  <img src="docs/header.webp" alt="Conveyor" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart" />
+  <img src="https://img.shields.io/github/license/jorgenosberg/conveyor?style=flat-square" alt="License" />
+  <img src="https://img.shields.io/github/last-commit/jorgenosberg/conveyor?style=flat-square" alt="Last commit" />
+</p>
 
 A companion app for [Satisfactory](https://www.satisfactorygame.com/). Browse items, look up recipes and their alternates, and sketch out production chains.
 
