@@ -1,16 +1,34 @@
-# conveyor
+# Conveyor
 
-A Satisfactory factory planning companion app
+A companion app for [Satisfactory](https://www.satisfactorygame.com/). Browse items, look up recipes and their alternates, and sketch out production chains.
 
-## Getting Started
+Fan project, not affiliated with Coffee Stain Studios.
 
-This project is a starting point for a Flutter application.
+## Status
 
-A few resources to get you started if this is your first Flutter project:
+Item browser, recipe browser, and a rough production graph work. Factory planning and optimization are the reason I started this, but they aren't built yet.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Running it
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+You'll need the [Flutter SDK](https://docs.flutter.dev/get-started/install) (Dart `^3.9.2`).
+
+```bash
+flutter pub get
+flutter run
+```
+
+Builds to iOS, Android, web, macOS, Windows, and Linux via `flutter build <platform>`. I mostly develop against the iOS simulator, so the other platforms may have rough edges.
+
+```bash
+flutter analyze
+flutter test
+dart format .
+```
+
+## Game assets
+
+All item/building/recipe data in `assets/data/` and icons in `assets/images/` come from Satisfactory and belong to Coffee Stain Studios. I don't own any of it — it's here so the app is useful. If anyone from Coffee Stain wants something removed, open an issue and I'll take it down.
+
+## License
+
+Code is MIT (see [`LICENSE`](./LICENSE)). That license covers the source only, not the game assets under `assets/`.
